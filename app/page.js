@@ -110,7 +110,7 @@ export default function Home() {
         <div className="flex absolute px-12 top-[60%] gap-16 justify-center ">
           <div className="flex relative justify-center">
             <Image
-              src="/1pic.png"
+              src="/1pic.webp"
               alt="service pic"
               className="w-full"
               height={100}
@@ -123,7 +123,7 @@ export default function Home() {
           </div>
           <div className="flex relative justify-center">
             <Image
-              src="/2pic.png"
+              src="/2pic.webp"
               alt="service pic"
               className="w-full"
               height={100}
@@ -136,7 +136,7 @@ export default function Home() {
           </div>
           <div className="flex relative justify-center">
             <Image
-              src="/3pic.png"
+              src="/3pic.webp"
               alt="service pic"
               className="w-full"
               height={100}
@@ -149,7 +149,7 @@ export default function Home() {
           </div>
           <div className="flex relative justify-center">
             <Image
-              src="/4pic.png"
+              src="/4pic.webp"
               alt="service pic"
               className="w-full"
               height={100}
