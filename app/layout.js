@@ -2,6 +2,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import NavbarSmall from "./components/NavbarSmall";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,7 +22,9 @@ export default function RootLayout({ children }) {
           <div className="lg:hidden block">
             <NavbarSmall />
           </div>
-        {children}</body>
+        {children}
+        <SpeedInsights/>
+        </body>
     </html>
   );
 }
