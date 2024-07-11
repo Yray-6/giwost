@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faLocationDot } from '@fortawesome/free-solid-svg-icons';
-import NavLinks from './NavLinks';
+import NavLinks from './Navlinks';
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
