@@ -52,7 +52,7 @@ export default function About() {
 
     <div className="relative">
         <div className=" bg-bluu text-center pt-12 text-white">
-          <p className="text-4xl font-semibold mb-2 font-serif px-[25%]">We have been giving best Traning to Motivated Trainees.</p>
+          <p className="text-4xl mb-2 font-serif px-[25%]">We have been giving best Traning to Motivated Trainees.</p>
           <div className='flex justify-center pb-36 gap-2 items-center'>
             <hr className='w-16 border border-red-500'></hr>
             <p className='relative z-10 text-sm'>OUR SERVICES</p>
@@ -87,14 +87,14 @@ export default function About() {
             
           </div>
           <div>
-            <p className="text-base font-semibold">Certifications</p>
+            <p className="text-base font-semibold">In-Depth Analysis</p>
             <div className="w-full bg-bluu text-xs px-1 text-white text-right rounded">
               100%
             </div>
             
           </div>
           <div>
-            <p className="text-base font-semibold">Certifications</p>
+            <p className="text-base font-semibold">Customized Experience</p>
             <div className="w-full bg-bluu text-xs px-1 text-white text-right rounded">
               100%
             </div>

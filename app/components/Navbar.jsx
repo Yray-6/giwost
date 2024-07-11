@@ -33,7 +33,7 @@ export default function Navbar() {
           <p><FontAwesomeIcon icon={faLocationDot}/> Port-harcourt, Lagos, Abuja, Warri, Asaba, Nigeria</p>
         </div>
       </div>
-      <div className={`w-full flex pl-20 pr-28 py-2 z-50 justify-between items-center transition-colors duration-300 ${isScrolled ? 'fixed top-0 bg-white text-black' : 'bg-transparent'}`}>
+      <div className={`w-full flex pl-20 pr-28 py-2 z-50 justify-between items-center transition-colors duration-300 ${isScrolled ? 'fixed top-0 bg-white shadow text-black' : 'bg-transparent'}`}>
         <Link href="/" className='flex items-center'>
           <Image
             src="/Logo.png"

@@ -89,9 +89,12 @@ export default function Home() {
               locally, by providing standardized assessments and certifications
               that hold weight worldwide.
             </p>
+            <Link href='/About'>
             <button className="self-start bg-blu text-sm text-white px-4 py-2 rounded-xl">
               Learn More
             </button>
+            </Link>
+           
           </div>
         </div>
       </div>
@@ -160,7 +163,7 @@ export default function Home() {
         </div>
       </div>
       <div className="video mt-80 px-[15%] grid grid-cols-2 relative">
-        <div className="flex flex-col gap-5 relative z-20 py-6 col-span-1">
+        <div className="flex flex-col gap-5 relative z-20 py-10 col-span-1">
         <div className='flex gap-7 items-center mb-5'>
             <p className=" text-xs font-semibold">OUR SKILLS</p>
             <hr className='w-20 border border-red-500'></hr>
@@ -174,18 +177,19 @@ export default function Home() {
             Individuals worldwide. 
           </p>
           <div>
-            <p className="text-lg font-semibold mb-1">
+            <p className="text-base font-semibold">
               Research-based Materials
             </p>
-            <div className="w-full bg-bluu text-xs px-1 text-white text-right py-1 rounded">
+            <div className="w-full bg-bluu text-xs px-1 text-white text-right rounded">
               100%
             </div>
           </div>
           <div>
-            <p className="text-lg font-semibold mb-1">Certifications</p>
-            <div className="w-full bg-bluu text-xs px-1 text-white text-right py-1 rounded">
+            <p className="text-base font-semibold">Certifications</p>
+            <div className="w-full bg-bluu text-xs px-1 text-white text-right rounded">
               100%
             </div>
+            
           </div>
         </div>
         <div className="absolute z-40 -top-16 right-[15%]">

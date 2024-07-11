@@ -19,7 +19,7 @@ const links = [
   },
   {
     name: "Services",
-    href: "/buying",
+    href: "/services",
   },
   {
     name: "FAQs",

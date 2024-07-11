@@ -12,7 +12,7 @@ export default function Verification() {
         </p>
         <div className="flex justify-center gap-2 items-center">
           <hr className="w-12 border border-red-500"></hr>
-          <p className="relative z-10 text-sm">WHO WE ARE</p>
+          <p className="relative z-10 text-sm">Verify</p>
           <hr className="w-12 border border-red-500"></hr>
         </div>
       </div>
