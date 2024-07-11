@@ -42,7 +42,7 @@ export default function About() {
             <p className="text-sm">
               We launched with a vision to transform the training industry by
               offering a unique and internationally recognized awarding
-              experience. Over the past year, we've empowered Individuals
+              experience. Over the past year, we&apos;ve empowered Individuals
               locally, by providing standardized assessments and certifications
               that hold weight worldwide.
             </p>
