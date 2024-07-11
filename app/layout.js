@@ -13,6 +13,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head> <link rel="icon" href="/Logo.png"/></head>
       <body className={inter.className}>
       <div className="lg:block hidden">
             <Navbar />
