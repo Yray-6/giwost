@@ -199,7 +199,7 @@ export default function Home() {
             alt="service pic"
             className="w-full"
             height={100}
-            width={100}
+            width={700}
           />
         </div>
         <div className="absolute inset-0 bg-white opacity-80"></div>
