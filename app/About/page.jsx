@@ -22,7 +22,7 @@ export default function About() {
         <div className='py-20 px-[10%] grid h-screen  grid-cols-2'>
             <div className="col-span-1 px-12">
                 <Image
-                src="/aboutus.png"
+                src="/aboutus.webp"
                 height={100}
                 width={1000}
                 alt="image"

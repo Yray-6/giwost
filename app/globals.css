@@ -13,7 +13,7 @@ body{
 }
 
 .bghero {
-  background-image: url("/herobg.png");
+  background-image: url("/herobg.webp");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -156,13 +156,13 @@ iframe.skiptranslate { display: "none !important"; }
 }
 
 .video{
-  background-image: url("/puzzle.png");
+  background-image: url("/puzzle.webp");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .bgf{
-  background-image: url("/abt.png");
+  background-image: url("/abt.webp");
   background-size: cover;
   background-repeat: no-repeat;
 }
