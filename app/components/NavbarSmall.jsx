@@ -17,11 +17,11 @@ function NavbarSmall() {
   const pathname = usePathname();
   return (
     <div className={clsx('fixed w-full bg-white z-50 shadow-md',{'hidden': pathname.startsWith('/dashboard')|| pathname.startsWith('/adminito69')})}>
-      <div className="flex justify-between bg-white px-6 py-7 z-30 relative items-center">
-        <Link href="/">
-          <Image src="/logo.svg" width={90} height={100} alt="logo" />
+      <div className="flex justify-between bg-white px-6 py-5 z-30 relative items-center">
+        <Link href="/" className="flex items-center gap-2">
+          <Image src="/Logo.png" width={60} height={100} alt="logo" /> <p   className="font-bold text-sm">GIWOST</p>
         </Link>
-        <div className="w-7 cursor-pointer" onClick={toggleMenu}>
+        <div className="w-7 text-2xl cursor-pointer" onClick={toggleMenu}>
           <FontAwesomeIcon icon={menuOpen ? faTimes : faBars} />
         </div>
       </div>
@@ -37,29 +37,18 @@ function NavbarSmall() {
         }`}
       >
         <nav className="flex flex-col  mt-20 space-y-6">
-          <Link href="/" className={clsx("text-lg font-light",{"font-normal":pathname === "/"})} onClick={toggleMenu}>
-            Invest in Tomorrow, Today
+          <Link href="/" className={clsx("text-lg border-b border-b-gray-500 pb-2 font-light",{"font-bold":pathname === "/"})} onClick={toggleMenu}>
+            About Us
           </Link>
-          {/* <div className="flex flex-col gap-2 pl-5 text-sm font-light">
-            <Link href="/" className="hover:bg-black hover:text-white"><p>How to Own Gold Online</p></Link>
-            <Link href="/buying" className="hover:bg-black hover:text-white"><p>Transparency in Buying</p></Link>
-            <Link href="/insights" className="hover:bg-black hover:text-white"><p>Gold&apos;s Liquidity</p></Link>
-            <Link href="/case" className="hover:bg-black hover:text-white"><p>Ease of Investment</p></Link>
-            <Link href="/buying" className="hover:bg-black hover:text-white"><p>Gold&apos;s Role in Society </p></Link>
-            <Link href="/insights" className="hover:bg-black hover:text-white"><p>How Gold is Different</p></Link>
-          </div> */}
-          <Link href="/case" className={clsx("text-lg font-light",{"font-normal":pathname === "/case"})} onClick={toggleMenu}>
-            The Case for Gold
+          <Link href="/case" className={clsx("text-lg border-b border-b-gray-500 pb-2 font-light",{"font-bold":pathname === "/About"})} onClick={toggleMenu}>
+            Services
           </Link>
-          <Link href="/buying" className={clsx("text-lg font-light",{"font-normal":pathname === "/buying"})} onClick={toggleMenu}>
-            Buying Gold Safely
+          <Link href="/buying" className={clsx("text-lg border-b border-b-gray-500 pb-2 font-light",{"font-bold":pathname === "/faq"})} onClick={toggleMenu}>
+            FAQs
           </Link>
-          <a href="#" className="text-lg font-light">
-        EN | DE
-      </a>
-      <button onClick={toggleMenu} className=" bg-gradient-to-r from-gradf to-gradt py-3 px-7  w-full text-base rounded font-semibold text-black">
-        <Link href="/login">Login/Signup</Link>
-      </button>
+          <Link href="/buying" className={clsx("text-lg border-b border-b-gray-500 pb-2 font-light",{"font-bold":pathname === "/buying"})} onClick={toggleMenu}>
+            Verify
+          </Link>
         </nav>
       </div>
     </div>

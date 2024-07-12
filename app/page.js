@@ -11,61 +11,50 @@ import {
 import Link from "next/link";
 import Partners from "./components/Partners";
 import Footer from "./components/Footer";
+import SwiperCarousel from "./components/Swiper";
+import SimpleSlider from "./components/Swiper";
+import Testimony from "./components/Testimony";
 
 export default function Home() {
   return (
     <div>
-      <div className="text-center text-white pt-12 flex items-center justify-center bghero h-screen  relative">
-        <div className="absolute inset-0 bg-black opacity-30"></div>
-        <div className="relative z-10">
-          <p className="mb-6 font-bold">WELCOME TO</p>
-          <p className="text-[34px] font-extrabold">
-            GLOBAL INSTITUTE OF WORKPLACE SKILLS <br />
-            TRAINING
-          </p>
-          <p className="mt-8 font-bold">
-            Experience the power of knowledge. Gain the skills to lead your
-            career.
-          </p>
-          <button className=" bg-blu py-2 px-4 text-lg rounded-xl mt-12">
-            ENROLL NOW
-          </button>
-        </div>
-
-        <div className="absolute bg-white -bottom-12 shadow-lg flex gap-32 px-7 text-blackish">
-          <div className="flex gap-2 px-2">
-            <div className=" border-r border-r-gray-400 text-[3rem] my-4 pr-5">
+      <div className="relative h-screen flex flex-col">
+        <SimpleSlider />
+        <div className="absolute bg-white -bottom-24 lg:-bottom-12 self-center shadow-lg  flex flex-col gap-3 lg:flex-row lg:gap-32 py-3 lg:py-0 px-8 lg:px-7 text-blackish">
+          <div className="flex lg:gap-2 gap-2 px-2">
+            <div className=" border-r border-r-gray-400 lg:text-[3rem] text-[1.5rem] lg:my-4 lg:pr-5 pr-2">
               <FontAwesomeIcon icon={faBuildingColumns} />
             </div>
 
-            <div className="flex-col justify-center items-start flex gap-3">
+            <div className="flex-col justify-center items-start flex lg:gap-3">
               <p>FLEXIBLE</p>
               <p className=" font-semibold ">COURSES</p>
             </div>
           </div>
-          <div className="flex gap-2 px-2">
-            <div className=" border-r border-r-gray-400 text-[3rem] my-4 pr-5">
+          <div className="flex lg:gap-2 gap-2 px-2">
+            <div className=" border-r border-r-gray-400 text-[1.5rem] lg:text-[3rem] lg:my-4 pr-2 lg:pr-5">
               <FontAwesomeIcon icon={faGlobe} />
             </div>
 
-            <div className="flex-col justify-center items-start flex gap-3">
+            <div className="flex-col justify-center items-start flex lg:gap-3">
               <p>FLEXIBLE</p>
               <p className=" font-semibold ">ASSESMENTS</p>
             </div>
           </div>
-          <div className="flex gap-2 px-2">
-            <div className=" border-r border-r-gray-400 text-[3rem] my-4 pr-5">
+          <div className="flex lg:gap-2 gap-2 px-2">
+            <div className=" border-r border-r-gray-400 text-[1.5rem] lg:text-[3rem] lg:my-4 pr-2 lg:pr-5">
               <FontAwesomeIcon icon={faAward} />
             </div>
 
-            <div className="flex-col justify-center items-start flex gap-3">
+            <div className="flex-col justify-center items-start flex lg:gap-3">
               <p>VERIFIABLE</p>
               <p className=" font-semibold ">CERTIFICATION</p>
             </div>
           </div>
         </div>
       </div>
-      <div className="py-[10%] px-[15%] h-screen flex">
+
+      <div className="lg:py-[10%] pt-36 mb-24 px-[5%] lg:px-[15%] h-screen flex flex-col lg:flex-row">
         <Image
           src="/helmet.png"
           alt="image"
@@ -75,9 +64,9 @@ export default function Home() {
         />
         <div className=" py-5 flex items-center">
           <div className="bg-gray-100 px-8 flex-col flex gap-5 py-7">
-          <div className='flex gap-7 items-center mb-5'>
-            <p className=" text-xs font-semibold">About Us</p>
-            <hr className='w-20 border border-red-500'></hr>
+            <div className="flex gap-7 items-center mb-5">
+              <p className=" text-xs font-semibold">About Us</p>
+              <hr className="w-20 border border-red-500"></hr>
             </div>
             <p className=" text-2xl font-bold leading-7">
               GIWOST is committed to drive skill training
@@ -89,25 +78,26 @@ export default function Home() {
               locally, by providing standardized assessments and certifications
               that hold weight worldwide.
             </p>
-            <Link href='/About'>
-            <button className="self-start bg-blu text-sm text-white px-4 py-2 rounded-xl">
-              Learn More
-            </button>
+            <Link href="/About">
+              <button className="self-start bg-blu text-sm text-white px-4 py-2 rounded-xl">
+                Learn More
+              </button>
             </Link>
-           
           </div>
         </div>
       </div>
       <div className="relative">
         <div className=" bg-bluu text-center pt-12 text-white">
-          <p className="text-3xl font-semibold">WHAT ARE WE OFFERING</p>
-          <div className='flex justify-center pb-36 gap-2 items-center'>
-            <hr className='w-16 border border-red-500'></hr>
-            <p className='relative z-10 text-sm'>OUR SERVICES</p>
-            <hr className='w-16 border border-red-500'></hr>
-            </div>
+          <p className="lg:text-3xl text-2xl font-semibold mb-2">
+            WHAT ARE WE OFFERING
+          </p>
+          <div className="flex justify-center pb-36 gap-2 items-center">
+            <hr className="w-16 border border-red-500"></hr>
+            <p className="relative z-10 text-sm">OUR SERVICES</p>
+            <hr className="w-16 border border-red-500"></hr>
+          </div>
         </div>
-        <div className="flex absolute px-12 top-[60%] gap-16 justify-center ">
+        <div className="flex absolute lg:flex-row flex-col  px-12 top-[60%] gap-16 justify-center ">
           <div className="flex relative justify-center">
             <Image
               src="/1pic.webp"
@@ -162,12 +152,12 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="video mt-80 px-[15%] grid grid-cols-2 relative">
+      <div className="video lg:mt-80 mt-[1300px] px-5 lg:px-[15%] grid lg:grid-cols-2 relative">
         <div className="flex flex-col gap-5 relative z-20 py-10 col-span-1">
-        <div className='flex gap-7 items-center mb-5'>
+          <div className="flex gap-7 items-center mb-5">
             <p className=" text-xs font-semibold">OUR SKILLS</p>
-            <hr className='w-20 border border-red-500'></hr>
-            </div>
+            <hr className="w-20 border border-red-500"></hr>
+          </div>
           <p className=" text-2xl font-bold leading-7">
             Welcome to the best Assessment & certification company.
           </p>
@@ -177,9 +167,7 @@ export default function Home() {
             Individuals worldwide. 
           </p>
           <div>
-            <p className="text-base font-semibold">
-              Research-based Materials
-            </p>
+            <p className="text-base font-semibold">Research-based Materials</p>
             <div className="w-full bg-bluu text-xs px-1 text-white text-right rounded">
               100%
             </div>
@@ -189,7 +177,6 @@ export default function Home() {
             <div className="w-full bg-bluu text-xs px-1 text-white text-right rounded">
               100%
             </div>
-            
           </div>
         </div>
         <div className="absolute z-40 -top-16 right-[15%]">
@@ -197,7 +184,7 @@ export default function Home() {
           <Image
             src="/fork.png"
             alt="service pic"
-            className="w-full"
+            className="w-full hidden lg:block"
             height={100}
             width={700}
           />
@@ -205,13 +192,13 @@ export default function Home() {
         <div className="absolute inset-0 bg-white opacity-80"></div>
       </div>
       <div className=" text-center py-20">
-        <p className="text-3xl font-semibold">HOW IT WORKS</p>
-        <div className='flex justify-center gap-2 items-center'>
-            <hr className='w-12 border border-red-500'></hr>
-            <p className='relative z-10 text-sm'>THE PROCESS FLOW</p>
-            <hr className='w-12 border border-red-500'></hr>
-            </div>
-        <div className=" flex px-20 gap-16 justify-center items-center pt-12">
+        <p className="lg:text-3xl text-2xl font-semibold">HOW IT WORKS</p>
+        <div className="flex justify-center gap-2 items-center">
+          <hr className="w-12 border border-red-500"></hr>
+          <p className="relative z-10 text-sm">THE PROCESS FLOW</p>
+          <hr className="w-12 border border-red-500"></hr>
+        </div>
+        <div className=" flex lg:flex-row flex-col px-20 gap-8 lg:gap-16 justify-center items-center pt-12">
           <div className="rounded-full relative">
             <Image
               src="/round1.png"
@@ -223,7 +210,7 @@ export default function Home() {
             <div className=" w-16 h-16 text-white absolute top-0 right-0 bg-bluu rounded-full text-xl font-bold flex items-center justify-center">
               01
             </div>
-            <p className="mt-8 font-bold text-2xl">
+            <p className="mt-8 font-bold text-xl lg:text-2xl">
               Flexible <br />
               Courses
             </p>
@@ -239,7 +226,7 @@ export default function Home() {
             <div className=" w-16 h-16 text-white absolute top-0 right-0 bg-bluu rounded-full text-xl font-bold flex items-center justify-center">
               02
             </div>
-            <p className="mt-8 font-bold text-2xl">
+            <p className="mt-8 font-bold text-xl lg:text-2xl">
               Flexible <br />
               Assessments
             </p>
@@ -255,7 +242,7 @@ export default function Home() {
             <div className=" w-16 h-16 text-white absolute top-0 right-0 bg-bluu rounded-full text-xl font-bold flex items-center justify-center">
               03
             </div>
-            <p className="mt-8 font-bold text-2xl">
+            <p className="mt-8 font-bold text-xl lg:text-2xl">
               {" "}
               Verifiable <br />
               Certificates
@@ -264,33 +251,29 @@ export default function Home() {
           <Image
             src="/arrow.png"
             alt="service pic"
-            className="w-[70%] absolute"
+            className="w-[70%] hidden lg:block absolute"
             height={100}
             width={1000}
           />
         </div>
       </div>
-      <div className=" grid font-serif text-white grid-cols-10 mt-12">
-        <div className="col-span-6 bg-bluu pl-[15%] pr-20 flex flex-col gap-1 py-20 ">
-        <div className='flex gap-7 items-center mb-5'>
-            <p className="font-serif" >Testimonials</p>
-            <hr className='w-20 border border-red-500'></hr>
-            </div>
-          <p className=" font-serif text-4xl mb-20">
+      <div className=" grid font-serif text-white lg:grid-cols-10 mt-12">
+        <div className="col-span-6 bg-bluu pl-[15%] pr-20 flex flex-col gap-1 py-12 lg:py-20 ">
+          <div className="flex gap-4 lg:gap-7 items-center mb-3 lg:mb-5">
+            <p className="font-serif">Testimonials</p>
+            <hr className="w-20 border border-red-500"></hr>
+          </div>
+          <p className=" font-serif text-2xl lg:text-4xl mb-20">
             We are excited to share trainees review
           </p>
-          <p className="text-xl">Mr Alphonus</p>
-          <p className=" text-gray-400 mb-4">Port Hacourt</p>
-          <p className="text-3xl ">
-            “Lorem Ipsum, if you dont agree you are on your own”
-          </p>
+          {/* <Testimony className="hidden overflow-hidden lg:block"/> */}
         </div>
-        <div className="col-span-4 py-16">
+        <div className="col-span-4 py-5 lg:py-16">
           <div>
             <Image
               src="/testsim.png"
               alt="testimony"
-              className="w-full"
+              className="w-full hidden lg:block"
               height={100}
               width={100}
             />
@@ -298,40 +281,83 @@ export default function Home() {
         </div>
       </div>
       <div className=" text-center py-12">
-        <p className="text-3xl font-semibold">Our News and Insights</p>
-        <div className='flex justify-center gap-2 pb-36 items-center'>
-            <hr className='w-12 border border-red-500'></hr>
-            <p className='relative z-10 text-sm'>LATEST NEWS</p>
-            <hr className='w-12 border border-red-500'></hr>
-            </div>
+        <p className="lg:text-3xl text-2xl font-semibold">Our News and Insights</p>
+        <div className="flex justify-center gap-2 pb-36 items-center">
+          <hr className="w-12 border border-red-500"></hr>
+          <p className="relative z-10 text-sm">LATEST NEWS</p>
+          <hr className="w-12 border border-red-500"></hr>
+        </div>
       </div>
-      <div className=" text-center py-12 px-24 bg-gray-100">
-        <p className="text-4xl font-semibold">Get in touch</p>
-        <div className='flex justify-center gap-2 pb-10 items-center'>
-            <hr className='w-12 border border-red-500'></hr>
-            <p className='relative z-10 text-sm'>CONTACT DETAILS</p>
-            <hr className='w-12 border border-red-500'></hr>
-            </div>
+      <div className=" text-center py-12 px-4 lg:px-24 bg-gray-100">
+        <p className="lg:text-3xl text-2xl font-semibold">Get in touch</p>
+        <div className="flex justify-center gap-2 pb-10 items-center">
+          <hr className="w-12 border border-red-500"></hr>
+          <p className="relative z-10 text-sm">CONTACT DETAILS</p>
+          <hr className="w-12 border border-red-500"></hr>
+        </div>
 
-        <div className="flex px-16 gap-10 mb-8 py-4 bg-white">
-          <FontAwesomeIcon icon={faEnvelope} className="text-blu text-[4rem]" />
-          <div className="text-blu flex text-left flex-col gap-3">
-            <p className="text-xl"> Reach us Via Email</p>
-            <p className="text-2xl font-semibold">info@giwost.com</p>
+        <div className="flex  lg:px-16 px-4 gap-10 mb-8 py-2 lg:py-4 bg-white">
+          <FontAwesomeIcon icon={faEnvelope} className="text-blu text-[2rem] lg:text-[4rem]" />
+          <div className="text-blu flex text-left flex-col gap-1 lg:gap-3">
+            <p className="lg:text-xl">Reach us Via Email</p>
+            <p className="lg:text-2xl font-semibold">info@giwost.com</p>
           </div>
         </div>
-        <div className="flex px-16 gap-10 py-4 bg-white">
+
+        <div className="flex lg:px-16 px-4 gap-10 py-2 lg:py-4 bg-white">
           <FontAwesomeIcon
             icon={faLocationDot}
-            className="text-blu text-[4rem]"
+            className="text-blu text-[2rem] lg:text-[4rem]"
           />
-          <div className="text-blu flex text-left flex-col gap-3">
-            <p className="text-xl"> Office Address</p>
-            <p className="text-2xl font-semibold">info@giwost.com</p>
+          <div className="text-blu flex text-left flex-col gap-1 lg:gap-3">
+            <p className="lg:text-xl">Head Office Address</p>
+            <p className="lg:text-lg text-xs font-semibold">
+              SUITES 25/26 LONGJOHN PLAZA, 34 AGIP ROAD BESIDES MARKET SQUARE
+              MILE 4 RUMUEME PORT HARCOURT
+            </p>
+          </div>
+        </div>
+
+        <div className="flex lg:px-16 px-6 gap-10 py-4 bg-white">
+          <FontAwesomeIcon
+            icon={faLocationDot}
+            className="text-blu lg:text-[2.5rem] text-[1.5rem]"
+          />
+          <div className="text-blu flex text-left flex-col gap-1 lg:gap-3">
+            <p className="lg:text-xl">Branch Office 1 Lagos</p>
+            <p className="lg:text-lg text-xs font-semibold">
+              FIRST FLOOR IBIZA PLAZA, 54 JESUS SAVES ROAD, SUMMIT ASABA.
+            </p>
+          </div>
+        </div>
+
+        <div className="flex lg:px-16 px-6 gap-10 py-4 bg-white">
+          <FontAwesomeIcon
+            icon={faLocationDot}
+            className="text-blu lg:text-[2.5rem] text-[1.5rem]"
+          />
+          <div className="text-blu flex text-left flex-col gap-1 lg:gap-3">
+            <p className="lg:text-xl">Branch Office 2 Warri</p>
+            <p className="lg:text-lg text-xs font-semibold">
+              67 HOSPITAL ROAD/JAKPA ROAD, OPPOSITE ZENITH BANK, EKPAN.
+            </p>
+          </div>
+        </div>
+
+        <div className="flex lg:px-16 px-6 gap-10 py-4 bg-white">
+          <FontAwesomeIcon
+            icon={faLocationDot}
+            className="text-blu lg:text-[2.5rem] text-[1.5rem]"
+          />
+          <div className="text-blu flex text-left flex-col gap-1 lg:gap-3">
+            <p className="lg:text-xl">Branch Office 3 Asaba</p>
+            <p className="lg:text-lg text-xs font-semibold">
+              FIRST FLOOR IBIZA PLAZA, 54 JESUS SAVES ROAD, SUMMIT ASABA.
+            </p>
           </div>
         </div>
       </div>
-   <Partners/>
+      <Partners/>
    <Footer/>
     </div>
   );

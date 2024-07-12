@@ -18,6 +18,12 @@ body{
   background-repeat: no-repeat;
 }
 
+.bgho{
+  background-image: url("/bgho.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 @media only screen and (min-width: 600px){
   .hero {
     background-image: url("/hero.jpeg");
@@ -143,17 +149,6 @@ iframe.skiptranslate { display: "none !important"; }
   transform: rotateY(180deg);
 }
 
-.slick-slide>div{
-  margin: 0 30px;
-}
-
-.slick-slide>div:nth-child(1){
-  margin-left: 0;
-}
-
-.slick-list{
-  margin-right: -30px;
-}
 
 .video{
   background-image: url("/puzzle.webp");
@@ -167,3 +162,16 @@ iframe.skiptranslate { display: "none !important"; }
   background-repeat: no-repeat;
 }
 
+.slick-slide {
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+.slick-list {
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+}
+
+.slick-track {
+  margin: 0; /* Remove margin */
+}
