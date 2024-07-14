@@ -36,7 +36,7 @@ export default function Faq() {
     <div>
       <div className="text-center text-white pt-12 flex-col flex items-center justify-center bghero h-[60vh]  relative">
         <div className="absolute inset-0 bg-black opacity-30"></div>
-        <p className="font-bold relative z-10 text-[4rem] font-mono">
+        <p className="font-bold relative z-10 lg:text-[4rem] text-[2rem] font-mono">
           Frequently Asked Questions
         </p>
         <div className="flex justify-center gap-2 items-center">
@@ -45,8 +45,8 @@ export default function Faq() {
           <hr className="w-12 border border-red-500"></hr>
         </div>
       </div>
-      <div className="max-w-2xl mx-auto my-12 ">
-        <h1 className="text-2xl font-bold mb-12 text-blackish">Frequently Asked Questions</h1>
+      <div className="max-w-2xl mx-auto my-12 px-4">
+        <h1 className="lg:text-2xl text-xl font-bold mb-12 text-blackish">Frequently Asked Questions</h1>
         {faqs.map((faq, index) => (
           <Accordion key={index} question={faq.question} answer={faq.answer} />
         ))}

@@ -37,17 +37,17 @@ function NavbarSmall() {
         }`}
       >
         <nav className="flex flex-col  mt-20 space-y-6">
-          <Link href="/" className={clsx("text-lg border-b border-b-gray-500 pb-2 font-light",{"font-bold":pathname === "/"})} onClick={toggleMenu}>
+          <Link href="/About" className={clsx("text-lg border-b border-b-gray-500 pb-2 font-light",{"font-bold":pathname === "/"})} onClick={toggleMenu}>
             About Us
           </Link>
-          <Link href="/case" className={clsx("text-lg border-b border-b-gray-500 pb-2 font-light",{"font-bold":pathname === "/About"})} onClick={toggleMenu}>
+          <Link href="/services" className={clsx("text-lg border-b border-b-gray-500 pb-2 font-light",{"font-bold":pathname === "/About"})} onClick={toggleMenu}>
             Services
           </Link>
-          <Link href="/buying" className={clsx("text-lg border-b border-b-gray-500 pb-2 font-light",{"font-bold":pathname === "/faq"})} onClick={toggleMenu}>
+          <Link href="/faq" className={clsx("text-lg border-b border-b-gray-500 pb-2 font-light",{"font-bold":pathname === "/faq"})} onClick={toggleMenu}>
             FAQs
           </Link>
-          <Link href="/buying" className={clsx("text-lg border-b border-b-gray-500 pb-2 font-light",{"font-bold":pathname === "/buying"})} onClick={toggleMenu}>
-            Verify
+          <Link href="/verification" className={clsx("text-lg border-b border-b-gray-500 pb-2 font-light",{"font-bold":pathname === "/buying"})} onClick={toggleMenu}>
+            Verify Certificates
           </Link>
         </nav>
       </div>

@@ -14,6 +14,8 @@ import Footer from "./components/Footer";
 import SwiperCarousel from "./components/Swiper";
 import SimpleSlider from "./components/Swiper";
 import Testimony from "./components/Testimony";
+import SwipeN from "./components/SwipeN";
+import FloatingWhatsApp from "./components/Floating";
 
 export default function Home() {
   return (
@@ -54,7 +56,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="lg:py-[10%] pt-36 mb-24 px-[5%] lg:px-[15%] h-screen flex flex-col lg:flex-row">
+      <div className="lg:py-[10%] pt-36 mb-24 px-[5%] lg:px-[15%] flex flex-col lg:flex-row">
         <Image
           src="/helmet.png"
           alt="image"
@@ -86,8 +88,8 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="relative">
-        <div className=" bg-bluu text-center pt-12 text-white">
+      <div className="relative flex flex-col items-center">
+        <div className=" bg-bluu text-center w-full pt-12 text-white">
           <p className="lg:text-3xl text-2xl font-semibold mb-2">
             WHAT ARE WE OFFERING
           </p>
@@ -282,10 +284,13 @@ export default function Home() {
       </div>
       <div className=" text-center py-12">
         <p className="lg:text-3xl text-2xl font-semibold">Our News and Insights</p>
-        <div className="flex justify-center gap-2 pb-36 items-center">
+        <div className="flex justify-center gap-2 pb-10 items-center">
           <hr className="w-12 border border-red-500"></hr>
           <p className="relative z-10 text-sm">LATEST NEWS</p>
           <hr className="w-12 border border-red-500"></hr>
+        </div>
+        <div className="px-[10%]">
+          <SwipeN/>
         </div>
       </div>
       <div className=" text-center py-12 px-4 lg:px-24 bg-gray-100">
@@ -359,6 +364,7 @@ export default function Home() {
       </div>
       <Partners/>
    <Footer/>
+   <FloatingWhatsApp/>
     </div>
   );
 }

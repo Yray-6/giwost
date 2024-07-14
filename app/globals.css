@@ -17,9 +17,20 @@ body{
   background-size: cover;
   background-repeat: no-repeat;
 }
+.newsbg {
+  background-image: url("/news.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
 .bgho{
   background-image: url("/bgho.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bghos{
+  background-image: url("/pic3.webp");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -174,4 +185,18 @@ iframe.skiptranslate { display: "none !important"; }
 
 .slick-track {
   margin: 0; /* Remove margin */
+}
+
+.news .slick-slide {
+  margin: 0 0px; /* Remove default margin */
+  padding:0 10px; /* Remove default padding */
+}
+
+.news .slick-list {
+  padding: 0 0px; /* Remove padding */
+  margin: 0 10px; /* Remove margin */
+}
+
+.news .slick-track {
+  margin: 0 10px; /* Remove margin */
 }

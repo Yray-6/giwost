@@ -37,7 +37,7 @@ export default function Partners() {
           src="/Logo.png"
           width={90}
           height={50}
-          className="hidden md:block"
+          className="block w-12"
           alt="logo"
         />
       </div>
