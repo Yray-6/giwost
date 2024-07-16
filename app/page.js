@@ -109,8 +109,8 @@ export default function Home() {
             <p className="relative z-10 text-sm">OUR SERVICES</p>
             <hr className="w-16 border border-red-500"></hr>
           </div>
-          <div className="grid grid-cols-10 px-[10%] py-12 bg-gray-100">
-            <div className="col-span-7 pr-4 text-black">
+          <div className="lg:grid flex flex-col  justify-center lg:grid-cols-10 px-5 lg:px-[10%] pt-12 bg-gray-100">
+            <div className="col-span-7 lg:pr-4 text-black">
               <p className="mb-2 font-semibold text-left">
                 COMPLETE HEALTH AND SOCIAL CARE BUNDLE: SOCIAL CAREGIVER AND
                 HEALTH CARE ASSISTANT; it has 5 Certificate diploma and 21
@@ -135,16 +135,126 @@ export default function Home() {
                 <li>900hrs Student Transcript</li>
                 <li>FREE INTERNATIONAL CV TEMPLATE & JOB LINKS</li>
               </ul>
-              <p className="py-3 text-xs text-left">Duration: One week Theory class & 3 Weeks clinical training (3 times a week).
-Weekend/Part-time class: 12 weekends including clinical Training, 5 weekends without Clinical Training, class holds Every Saturdays 10am online only.
-Training Mode: Classroom or Online
-Instalmental Plan: to be paid in 2 or 3 instalments</p>
-                <p className="font-bold text-left">PROMO PRICE: N200,000</p>
-                <p className="font-bold text-left">ORIGINAL PRICE PRICE: N250,000</p>
+              <p className="py-3 text-xs text-left">
+                Duration: One week Theory class & 3 Weeks clinical training (3
+                times a week). Weekend/Part-time class: 12 weekends including
+                clinical Training, 5 weekends without Clinical Training, class
+                holds Every Saturdays 10am online only. Training Mode: Classroom
+                or Online Instalmental Plan: to be paid in 2 or 3 instalments
+              </p>
+              <p className="font-bold text-left">PROMO PRICE: N200,000</p>
+              <p className="font-bold text-left">
+                ORIGINAL PRICE PRICE: N250,000
+              </p>
             </div>
-            <div className="flex col-span-3 relative justify-center">
+            <div className="flex my-5 col-span-3 lg:mx-0 mx-7 relative justify-center">
               <Image
                 src="/1pic.webp"
+                alt="service pic"
+                className="w-full object-cover"
+                height={100}
+                width={1000}
+              />
+              <div className="absolute inset-0 bg-black opacity-10"></div>
+              <div
+                className={`bg-white px-4 shadow absolute py-4 min-w-44 text-center font-semibold border-r-8 text-black rounded-lg -bottom-3 text-sm border-r-green-600`}
+              >
+                Healthcare Assistant and <br></br> Social Caregiver
+              </div>
+            </div>
+          </div>
+          <div className="lg:grid flex flex-col-reverse justify-center lg:grid-cols-10 px-5 lg:px-[10%] py-12 bg-white">
+            <div className="flex col-span-3 my-5 lg:mx-0 mx-7 relative justify-center">
+              <Image
+                src="/2pic.webp"
+                alt="service pic"
+                className="w-full object-cover"
+                height={100}
+                width={500}
+              />
+              <div className="absolute inset-0 bg-black opacity-10"></div>
+              <div
+                className={`bg-white px-4 shadow absolute py-4 min-w-44 text-center font-semibold border-r-8 text-black rounded-lg -bottom-3 text-sm border-r-yellow-600`}
+              >
+                Healthcare Assistant
+              </div>
+            </div>
+            <div className="col-span-7 lg:pl-4 text-black">
+              <p className="mb-2 font-semibold text-left">
+                HEALTH CARE ASSISTANT BUNDLE (formerly known as Nurse
+                Assistant): it has 2 Diploma and 5 other Certificates in this
+                bundle
+              </p>
+              <ul className="list-disc text-left list-inside text-sm">
+                <li>Diploma in Health Care Assistant at NVQ Level 3</li>
+                <li>Diploma in Adult Social Care at NVQ Level 3</li>
+                <li>The care certificate</li>
+                <li>CPD Accredited First Aid and CPR Certificate</li>
+                <li>Manual Handling Certificate</li>
+                <li>
+                  Certificate in Health and Safety for Health Care Professionals
+                </li>
+                <li>Child Care Certificate</li>
+                <li>Hospital Recommendation Letter</li>
+                <li>700hrs Student Transcript</li>
+                <li>FREE INTERNATIONAL CV TEMPLATE & JOB LINKS</li>
+              </ul>
+              <p className="py-3 text-xs text-left">
+                Weekday/Full Time class: One week Theory class & 3 Weeks
+                clinical training (3 times a week). Training Mode: Classroom or
+                Online Instalmental Plan: to be paid in 2 or 3 instalments
+              </p>
+              <p className="font-bold text-left">PROMO PRICE: N136,000</p>
+              <p className="font-bold text-left">ORIGINAL PRICE: N170,000</p>
+            </div>
+          </div>
+          <div className="lg:grid flex flex-col justify-center lg:grid-cols-10 px-5 lg:px-[10%] py-12 bg-gray-100">
+            <div className="col-span-7 lg:pr-4 text-black">
+              <p className="mb-2 font-semibold text-left">
+                SOCIAL CAREGIVER BUNDLE: It has 2 Diploma and 5 Certificates in
+                it.
+              </p>
+              <ul className="list-disc text-left list-inside text-sm">
+                <li>Diploma in Health and Social Care at NVQ Level 3</li>
+                <li>Diploma in Adult Social Care at NVQ Level 3</li>
+                <li>Care & Management of Dementia</li>
+                <li>CPD Accredited First Aid and CPR Certificate</li>
+                <li>Certificate in Fundamentals of Health and Social Care</li>
+                <li>Certificate in Caregiver Support Service Training</li>
+                <li>Certificate in Health and Safety in Caregiving</li>
+                <li>Hospital Recommendation Letter</li>
+                <li>700hrs Student Transcript</li>
+                <li>FREE INTERNATIONAL CV TEMPLATE & JOB LINKS</li>
+              </ul>
+              <p className="py-3 text-xs text-left">
+                Weekday/Full Time class: One week Theory class & 3 Weeks
+                clinical training (3 times a week). Training Mode: Classroom or
+                Online Instalmental Plan: to be paid in 2 or 3 instalments
+              </p>
+              <p className="font-bold text-left">PROMO PRICE: N120,000</p>
+              <p className="font-bold text-left">ORIGINAL PRICE: N150,000</p>
+            </div>
+
+            <div className="flex col-span-3 my-5 lg:m-0 mx-7 relative justify-center">
+              <Image
+                src="/3pic.webp"
+                alt="service pic"
+                className="w-full object-cover"
+                height={100}
+                width={500}
+              />
+              <div className="absolute inset-0 bg-black opacity-10"></div>
+              <div
+                className={`bg-white px-4 shadow absolute py-4 min-w-44 text-center font-semibold border-r-8 text-black rounded-lg -bottom-3 text-sm border-r-red-600`}
+              >
+                Social Caregiver
+              </div>
+            </div>
+          </div>
+          <div className="lg:grid flex flex-col-reverse lg:grid-cols-10 px-5 lg:px-[10%] py-12 bg-white">
+          <div className="flex col-span-3 relative my-5 lg:mx-0 mx-7 justify-center">
+              <Image
+                src="/3pic.webp"
                 alt="service pic"
                 className="w-full object-cover"
                 height={100}
@@ -154,13 +264,51 @@ Instalmental Plan: to be paid in 2 or 3 instalments</p>
               <div
                 className={`bg-white px-4 shadow absolute py-4 min-w-44 text-center font-semibold border-r-8 text-black rounded-lg -bottom-3 text-sm border-r-green-600`}
               >
-                Healthcare Assistant
+                Forklift Operator
               </div>
             </div>
+            <div className="col-span-7 lg:pl-4 text-black">
+              <p className="mb-2 font-semibold text-left">
+                COMPLETE HEALTH AND SOCIAL CARE BUNDLE: SOCIAL CAREGIVER AND
+                HEALTH CARE ASSISTANT; it has 5 Certificate diploma and 21
+                Certificates listed below (suitable for all country)
+              </p>
+              <ul className="list-disc text-left list-inside text-sm">
+                <li>Diploma in Health and Social Care at NVQ Level 3</li>
+                <li>Diploma in Health Care Assistant at NVQ Level 3</li>
+                <li>Diploma in Adult Social Care at NVQ Level 3</li>
+                <li>Diploma in Support Worker at NVQ Level 3</li>
+                <li>Diploma in Child Care at NVQ Level 3</li>
+                <li>15 Care Standard Certificate</li>
+                <li>Patients Care and Hygiene</li>
+                <li>Care & Management of Dementia</li>
+                <li>CPD Accredited First Aid and CPR Certificate</li>
+                <li>BLS – Basic Life Support Certificate</li>
+                <li>
+                  Certificate in Health and Safety for Health Care Professionals
+                </li>
+                {/* <li>Manual Handling Certificate</li>
+                <li>Hospital Recommendation Letter</li>
+                <li>900hrs Student Transcript</li>
+                <li>FREE INTERNATIONAL CV TEMPLATE & JOB LINKS</li> */}
+              </ul>
+              <p className="py-3 text-xs text-left">
+                Duration: One week Theory class & 3 Weeks clinical training (3
+                times a week). Weekend/Part-time class: 12 weekends including
+                clinical Training, 5 weekends without Clinical Training, class
+                holds Every Saturdays 10am online only. Training Mode: Classroom
+                or Online Instalmental Plan: to be paid in 2 or 3 instalments
+              </p>
+              <p className="font-bold text-left">PROMO PRICE: N200,000</p>
+              <p className="font-bold text-left">
+                ORIGINAL PRICE PRICE: N250,000
+              </p>
+            </div>
+         
           </div>
         </div>
       </div>
-      <div className="video lg:mt-80 mt-[1300px] px-5 lg:px-[15%] grid lg:grid-cols-2 relative">
+      <div className="video lg:mt-20  px-5 lg:px-[15%] grid lg:grid-cols-2 relative">
         <div className="flex flex-col gap-5 relative z-20 py-10 col-span-1">
           <div className="flex gap-7 items-center mb-5">
             <p className=" text-xs font-semibold">OUR SKILLS</p>
