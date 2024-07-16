@@ -1,23 +1,34 @@
+"use client";
+
 import Image from "next/image";
 import Swipe from "./components/Swiper";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useState } from "react";
 import {
   faAward,
   faBuildingColumns,
   faEnvelope,
   faGlobe,
   faLocationDot,
+  faAngleDown,
+  faAngleUp,
 } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 import Partners from "./components/Partners";
 import Footer from "./components/Footer";
-import SwiperCarousel from "./components/Swiper";
 import SimpleSlider from "./components/Swiper";
 import Testimony from "./components/Testimony";
 import SwipeN from "./components/SwipeN";
 import FloatingWhatsApp from "./components/Floating";
+import Services from "./components/offer";
 
 export default function Home() {
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+
+  const toggleDropdown = () => {
+    setDropdownOpen(!dropdownOpen);
+  };
+
   return (
     <div>
       <div className="relative h-screen flex flex-col">
@@ -56,7 +67,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="lg:py-[10%] pt-36 mb-24 px-[5%] lg:px-[15%] flex flex-col lg:flex-row">
+      <div className="lg:py-[5%] pt-36 mb-24 px-[5%] lg:px-[15%] flex flex-col lg:flex-row">
         <Image
           src="/helmet.png"
           alt="image"
@@ -89,67 +100,62 @@ export default function Home() {
         </div>
       </div>
       <div className="relative flex flex-col items-center">
-        <div className=" bg-bluu text-center w-full pt-12 text-white">
+        <div className="bg-bluu text-center w-full pt-12 text-white">
           <p className="lg:text-3xl text-2xl font-semibold mb-2">
             WHAT ARE WE OFFERING
           </p>
-          <div className="flex justify-center pb-36 gap-2 items-center">
+          <div className="flex justify-center pb-10 gap-2 items-center">
             <hr className="w-16 border border-red-500"></hr>
             <p className="relative z-10 text-sm">OUR SERVICES</p>
             <hr className="w-16 border border-red-500"></hr>
           </div>
-        </div>
-        <div className="flex absolute lg:flex-row flex-col  px-12 top-[60%] gap-16 justify-center ">
-          <div className="flex relative justify-center">
-            <Image
-              src="/1pic.webp"
-              alt="service pic"
-              className="w-full"
-              height={100}
-              width={1000}
-            />
-            <div className="absolute inset-0 bg-black opacity-10"></div>
-            <div className="bg-white px-4 shadow absolute py-4 min-w-44 text-center font-semibold border-r-8 rounded-lg border-r-green-600 -bottom-3 text-sm">
-              Healthcare Assistant
+          <div className="grid grid-cols-10 px-[10%] py-12 bg-gray-100">
+            <div className="col-span-7 pr-4 text-black">
+              <p className="mb-2 font-semibold text-left">
+                COMPLETE HEALTH AND SOCIAL CARE BUNDLE: SOCIAL CAREGIVER AND
+                HEALTH CARE ASSISTANT; it has 5 Certificate diploma and 21
+                Certificates listed below (suitable for all country)
+              </p>
+              <ul className="list-disc text-left list-inside text-sm">
+                <li>Diploma in Health and Social Care at NVQ Level 3</li>
+                <li>Diploma in Health Care Assistant at NVQ Level 3</li>
+                <li>Diploma in Adult Social Care at NVQ Level 3</li>
+                <li>Diploma in Support Worker at NVQ Level 3</li>
+                <li>Diploma in Child Care at NVQ Level 3</li>
+                <li>15 Care Standard Certificate</li>
+                <li>Patients Care and Hygiene</li>
+                <li>Care & Management of Dementia</li>
+                <li>CPD Accredited First Aid and CPR Certificate</li>
+                <li>BLS – Basic Life Support Certificate</li>
+                <li>
+                  Certificate in Health and Safety for Health Care Professionals
+                </li>
+                <li>Manual Handling Certificate</li>
+                <li>Hospital Recommendation Letter</li>
+                <li>900hrs Student Transcript</li>
+                <li>FREE INTERNATIONAL CV TEMPLATE & JOB LINKS</li>
+              </ul>
+              <p className="py-3 text-xs text-left">Duration: One week Theory class & 3 Weeks clinical training (3 times a week).
+Weekend/Part-time class: 12 weekends including clinical Training, 5 weekends without Clinical Training, class holds Every Saturdays 10am online only.
+Training Mode: Classroom or Online
+Instalmental Plan: to be paid in 2 or 3 instalments</p>
+                <p className="font-bold text-left">PROMO PRICE: N200,000</p>
+                <p className="font-bold text-left">ORIGINAL PRICE PRICE: N250,000</p>
             </div>
-          </div>
-          <div className="flex relative justify-center">
-            <Image
-              src="/2pic.webp"
-              alt="service pic"
-              className="w-full"
-              height={100}
-              width={1000}
-            />
-            <div className="absolute inset-0 bg-black opacity-10"></div>
-            <div className="bg-white px-4 shadow absolute py-4 min-w-44 text-center font-semibold border-r-8 rounded-lg border-r-yellow-600 -bottom-3 text-sm">
-              Social Caregiver
-            </div>
-          </div>
-          <div className="flex relative justify-center">
-            <Image
-              src="/3pic.webp"
-              alt="service pic"
-              className="w-full"
-              height={100}
-              width={1000}
-            />
-            <div className="absolute inset-0 bg-black opacity-10"></div>
-            <div className="bg-white px-4 shadow absolute min-w-44 text-center py-4 font-semibold border-r-8 rounded-lg border-r-red-600 -bottom-3 text-sm">
-              Forklift Operator
-            </div>
-          </div>
-          <div className="flex relative justify-center">
-            <Image
-              src="/4pic.webp"
-              alt="service pic"
-              className="w-full"
-              height={100}
-              width={1000}
-            />
-            <div className="absolute inset-0 bg-black opacity-10"></div>
-            <div className="bg-white px-4 shadow absolute min-w-44 text-center py-4 font-semibold border-r-8 rounded-lg border-r-blue-600 -bottom-3 text-sm">
-              HSE 1, 2, 3
+            <div className="flex col-span-3 relative justify-center">
+              <Image
+                src="/1pic.webp"
+                alt="service pic"
+                className="w-full object-cover"
+                height={100}
+                width={500}
+              />
+              <div className="absolute inset-0 bg-black opacity-10"></div>
+              <div
+                className={`bg-white px-4 shadow absolute py-4 min-w-44 text-center font-semibold border-r-8 text-black rounded-lg -bottom-3 text-sm border-r-green-600`}
+              >
+                Healthcare Assistant
+              </div>
             </div>
           </div>
         </div>
@@ -200,7 +206,7 @@ export default function Home() {
           <p className="relative z-10 text-sm">THE PROCESS FLOW</p>
           <hr className="w-12 border border-red-500"></hr>
         </div>
-        <div className=" flex lg:flex-row flex-col px-20 gap-8 lg:gap-16 justify-center items-center pt-12">
+        <div className=" flex lg:flex-row lg:hidden flex-col px-20 gap-8 lg:gap-16 justify-center items-center pt-12">
           <div className="rounded-full relative">
             <Image
               src="/round1.png"
@@ -258,6 +264,195 @@ export default function Home() {
             width={1000}
           />
         </div>
+
+        <div className="mx-[15%] hidden lg:block mt-12 pb-12 border-b border-b-black ">
+          <div className="grid grid-cols-10">
+            <div className="rounded-full relative col-span-2">
+              <Image
+                src="/round1.png"
+                alt="service pic"
+                className="w-full"
+                height={100}
+                width={1000}
+              />
+              <div className=" w-16 h-16 text-white absolute top-0 right-0 bg-bluu rounded-full text-xl font-bold flex items-center justify-center">
+                01
+              </div>
+            </div>
+            <div className="col-span-8 text-left pl-6">
+              <p className="font-bold text-xl pb-5 lg:text-2xl">
+                Flexible Courses
+              </p>
+              <div className="text-sm">
+                <p>
+                  Global Institute of Workplace Skills Training is the largest
+                  Caregiver and Health Care Assistant Training Institute in
+                  Nigeria and Africa at large!
+                </p>
+                <p>
+                  Our training holds in every state in Nigeria through Online
+                  zoom and via our partnering Hospitals for internship/clinical
+                  Training.
+                </p>
+                <p className="mb-2">
+                  Our training is a 4 weeks comprehensive Training which is
+                  divided into two sessions.
+                </p>
+                <p className="mb-2">
+                  {" "}
+                  <span className="font-bold">First Session:</span> one week
+                  theory class held in our Port Harcourt Office, Lagos, Warri,
+                  Asaba and Online interactive Class via zoom for those outside
+                  these locations.
+                </p>
+                <p className="mb-2">
+                  <span className="font-bold">Second session:</span>  Three
+                  weeks clinical/internship training held in all our Hospitals
+                  across Nigeria.
+                </p>
+                After the one week Online/classroom theory class, all our
+                students are posted to our various Hospitals in their location
+                for Practical hands-on experience.
+                <p className="mb-4">
+                  {" "}
+                  <span className="font-bold">Note:</span> The internship is
+                  optional, for those already having knowledge and experience
+                  that don’t want internship or those that just wants the
+                  documents At Giwost, we train you at your comfort zone giving
+                  you the same quality Training and classroom Experience.
+                </p>
+                <p>
+                  This option is for Interested persons that don’t have time to
+                  attend our schedule physical or online classes. All our
+                  training are recorded, the recorded Classes and Training
+                  Materials will be made available to you after Registration and
+                  Payment. You can watch and study the recorded classes at your
+                  own time, After your study, you can also discuss with the
+                  doctor at your Centre on what time you would like to be coming
+                  for internship.
+                </p>
+                <p>
+                  This option will enable you maintain your current job while
+                  Building a successful career as a Caregiver or Health Care
+                  Assistant. With Global Institute of Workplace Skills Training
+                  study options, you don’t have any reasons not to pursue your
+                  career and achieve it. … Education made Easy
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="mx-[15%] hidden lg:block mt-12 border-b border-b-black">
+          <div className="grid grid-cols-10">
+            <div className="col-span-8 text-left pr-6">
+              <p className="font-bold text-xl pb-5 lg:text-2xl">
+                Flexible Assessments
+              </p>
+              <div className="text-sm">
+                <p>
+                  We provide consulting services & corporate staff training that
+                  conform to highest standards and professionalism. We take
+                  pride in providing high quality QHSE training by ensuring the
+                  priority of students’ success and assistance to find a job.
+                </p>
+                <p>
+                  Our corporate training service is in two parts: first, we
+                  analyze your staff to ascertain the specific areas where they
+                  require training. Second, we design bespoke training that
+                  suite your specific needs and we provide world recognized
+                  certificates.
+                </p>
+                <p className="mb-2">
+                  Training can be conducted at our ultra-modern facility or at
+                  client’ site with 100% practical and field simulation that
+                  meet industry best practice.
+                </p>
+                <button className="bg-bluu text-white px-2 rounded my-4 py-1">
+                  Send Us a Mail
+                </button>
+                <p className="mb-2 font-medium">
+                  Audit and Certification for Organizations
+                </p>
+                We provides audits and certification against management system
+                standards which help organizations to implement international
+                best practices in order to improve their business performance
+                and achieve their objectives. Our audit and certification for
+                organization is in line with ISO 9001, ISO 45001 & 14001
+                standards.
+                <p>Other Services</p>
+                <ul class="list-disc pl-5 ">
+                  <li>Staff Training Needs Assessment</li>
+                  <li>Facility and systems HSE Audit</li>
+                  <li>Company HSE policy development and documentation</li>
+                  <li>Environmental Impact Assessment</li>
+                  <li>Fire Risk Assessment</li>
+                  <li>Project site HSE management</li>
+                  <li>Fleet management and safety</li>
+                  <li>Risk Assessment</li>
+                  <li>
+                    Accident Investigation, Root cause analysis and reporting
+                  </li>
+                  <li>Hazards and Effects Management Process</li>
+                  <li>Corporate safety department development</li>
+                  <li>
+                    Corporate staff HSE training and re-training on: basic and
+                    advanced fire fighting and rescue, confined space entry,
+                    basic and advanced first aid and CPR, permit to work system,
+                    working at height, etc
+                  </li>
+                  <li>
+                    HSE Mile-stone celebrations and Safety week organizing
+                  </li>
+                  <li>Preparation of Occupational Health and Safety Manuals</li>
+                  <li>
+                    Preparation of Occupational Health and Safety Pocketbooks
+                  </li>
+                  <li>Contingency and Emergency plans and management</li>
+                  <li>Supply of safety equipments</li>
+                  <li>Supply of PPE</li>
+                  <li>
+                    Refilling, maintaining and servicing of fire fighting
+                    equipments
+                  </li>
+                  <li>Installation of fire alarms and smoke detectors</li>
+                </ul>
+              </div>
+            </div>
+            <div className="rounded-full relative col-span-2">
+              <Image
+                src="/round2.png"
+                alt="service pic"
+                className="w-full"
+                height={100}
+                width={1000}
+              />
+              <div className=" w-16 h-16 text-white absolute top-0 right-0 bg-bluu rounded-full text-xl font-bold flex items-center justify-center">
+                02
+              </div>
+            </div>
+          </div>
+          <div className="mx-[15%] hidden lg:block mt-12 pb-12  ">
+            <div className="grid grid-cols-10">
+              <div className="rounded-full relative col-span-2">
+                <Image
+                  src="/round3.png"
+                  alt="service pic"
+                  className="w-full"
+                  height={100}
+                  width={1000}
+                />
+                <div className=" w-16 h-16 text-white absolute top-0 right-0 bg-bluu rounded-full text-xl font-bold flex items-center justify-center">
+                  03
+                </div>
+              </div>
+              <div className="col-span-8 text-left pl-6">
+                <p className="font-bold text-xl pb-5 lg:text-2xl">
+                  Verifiable Certificates
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <div className=" grid font-serif text-white lg:grid-cols-10 mt-12">
         <div className="col-span-6 bg-bluu pl-[15%] pr-20 flex flex-col gap-1 py-12 lg:py-20 ">
@@ -283,14 +478,16 @@ export default function Home() {
         </div>
       </div>
       <div className=" text-center py-12">
-        <p className="lg:text-3xl text-2xl font-semibold">Our News and Insights</p>
+        <p className="lg:text-3xl text-2xl font-semibold">
+          Our News and Insights
+        </p>
         <div className="flex justify-center gap-2 pb-10 items-center">
           <hr className="w-12 border border-red-500"></hr>
           <p className="relative z-10 text-sm">LATEST NEWS</p>
           <hr className="w-12 border border-red-500"></hr>
         </div>
         <div className="px-[10%]">
-          <SwipeN/>
+          <SwipeN />
         </div>
       </div>
       <div className=" text-center py-12 px-4 lg:px-24 bg-gray-100">
@@ -302,69 +499,77 @@ export default function Home() {
         </div>
 
         <div className="flex  lg:px-16 px-4 gap-10 mb-8 py-2 lg:py-4 bg-white">
-          <FontAwesomeIcon icon={faEnvelope} className="text-blu text-[2rem] lg:text-[4rem]" />
+          <FontAwesomeIcon
+            icon={faEnvelope}
+            className="text-blu text-[2rem] lg:text-[4rem]"
+          />
           <div className="text-blu flex text-left flex-col gap-1 lg:gap-3">
             <p className="lg:text-xl">Reach us Via Email</p>
             <p className="lg:text-2xl font-semibold">info@giwost.com</p>
           </div>
         </div>
 
-        <div className="flex lg:px-16 px-4 gap-10 py-2 lg:py-4 bg-white">
-          <FontAwesomeIcon
-            icon={faLocationDot}
-            className="text-blu text-[2rem] lg:text-[4rem]"
-          />
-          <div className="text-blu flex text-left flex-col gap-1 lg:gap-3">
-            <p className="lg:text-xl">Head Office Address</p>
-            <p className="lg:text-lg text-xs font-semibold">
-              SUITES 25/26 LONGJOHN PLAZA, 34 AGIP ROAD BESIDES MARKET SQUARE
-              MILE 4 RUMUEME PORT HARCOURT
-            </p>
-          </div>
-        </div>
+        <div className="max-w-6xl mx-auto lg:p-6">
+          <div className="relative flex flex-col items-center">
+            <div className="w-full text-left">
+              <button
+                className="flex lg:px-16 px-4 gap-10 py-2 lg:py-4 bg-white w-full items-center"
+                onClick={toggleDropdown}
+              >
+                <FontAwesomeIcon
+                  icon={faLocationDot}
+                  className="text-blu text-[2rem] lg:text-[4rem]"
+                />
+                <div className="text-blu flex flex-col text-left gap-1 lg:gap-3 flex-grow">
+                  <p className="lg:text-xl">Head Office Address</p>
+                  <p className="lg:text-lg text-xs font-semibold">
+                    SUITES 25/26 LONGJOHN PLAZA, 34 AGIP ROAD BESIDES MARKET
+                    SQUARE MILE 4 RUMUEME PORT HARCOURT
+                  </p>
+                </div>
+                <FontAwesomeIcon
+                  icon={dropdownOpen ? faAngleUp : faAngleDown}
+                  className="text-blu text-[1.5rem] lg:text-[2rem]"
+                />
+              </button>
 
-        <div className="flex lg:px-16 px-6 gap-10 py-4 bg-white">
-          <FontAwesomeIcon
-            icon={faLocationDot}
-            className="text-blu lg:text-[2.5rem] text-[1.5rem]"
-          />
-          <div className="text-blu flex text-left flex-col gap-1 lg:gap-3">
-            <p className="lg:text-xl">Branch Office 1 Lagos</p>
-            <p className="lg:text-lg text-xs font-semibold">
-              FIRST FLOOR IBIZA PLAZA, 54 JESUS SAVES ROAD, SUMMIT ASABA.
-            </p>
-          </div>
-        </div>
-
-        <div className="flex lg:px-16 px-6 gap-10 py-4 bg-white">
-          <FontAwesomeIcon
-            icon={faLocationDot}
-            className="text-blu lg:text-[2.5rem] text-[1.5rem]"
-          />
-          <div className="text-blu flex text-left flex-col gap-1 lg:gap-3">
-            <p className="lg:text-xl">Branch Office 2 Warri</p>
-            <p className="lg:text-lg text-xs font-semibold">
-              67 HOSPITAL ROAD/JAKPA ROAD, OPPOSITE ZENITH BANK, EKPAN.
-            </p>
-          </div>
-        </div>
-
-        <div className="flex lg:px-16 px-6 gap-10 py-4 bg-white">
-          <FontAwesomeIcon
-            icon={faLocationDot}
-            className="text-blu lg:text-[2.5rem] text-[1.5rem]"
-          />
-          <div className="text-blu flex text-left flex-col gap-1 lg:gap-3">
-            <p className="lg:text-xl">Branch Office 3 Asaba</p>
-            <p className="lg:text-lg text-xs font-semibold">
-              FIRST FLOOR IBIZA PLAZA, 54 JESUS SAVES ROAD, SUMMIT ASABA.
-            </p>
+              {dropdownOpen && (
+                <div className="mt-4 bg-gray-100 rounded-lg shadow-lg w-full">
+                  <div className="flex lg:px-16 px-6 gap-10 py-4 bg-white">
+                    <FontAwesomeIcon
+                      icon={faLocationDot}
+                      className="text-blu lg:text-[2.5rem] text-[1.5rem]"
+                    />
+                    <div className="text-blu flex text-left flex-col gap-1 lg:gap-3">
+                      <p className="lg:text-xl">Branch Office 1 Lagos</p>
+                      <p className="lg:text-lg text-xs font-semibold">
+                        FIRST FLOOR IBIZA PLAZA, 54 JESUS SAVES ROAD, SUMMIT
+                        ASABA.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex lg:px-16 px-6 gap-10 py-4 bg-white">
+                    <FontAwesomeIcon
+                      icon={faLocationDot}
+                      className="text-blu lg:text-[2.5rem] text-[1.5rem]"
+                    />
+                    <div className="text-blu flex text-left flex-col gap-1 lg:gap-3">
+                      <p className="lg:text-xl">Branch Office 2 Warri</p>
+                      <p className="lg:text-lg text-xs font-semibold">
+                        67 HOSPITAL ROAD/JAKPA ROAD, OPPOSITE ZENITH BANK,
+                        EKPAN.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              )}
+            </div>
           </div>
         </div>
       </div>
-      <Partners/>
-   <Footer/>
-   <FloatingWhatsApp/>
+      <Partners />
+      <Footer />
+      <FloatingWhatsApp />
     </div>
   );
 }

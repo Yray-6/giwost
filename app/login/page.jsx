@@ -1,10 +1,10 @@
-"use client";
+'use client';
 
-import React, { useState } from "react";
-import Link from "next/link";
-import { useFormik } from "formik";
-import * as Yup from "yup";
-import { useRouter } from "next/navigation";
+import React, { useState } from 'react';
+import Link from 'next/link';
+import { useFormik } from 'formik';
+import * as Yup from 'yup';
+import { useRouter } from 'next/navigation';
 
 export default function LoginPage() {
   const [loading, setLoading] = useState(false);
@@ -16,18 +16,18 @@ export default function LoginPage() {
 
   const formik = useFormik({
     initialValues: {
-      email: "",
+      username: "",
       password: "",
     },
     validationSchema: Yup.object({
-      email: Yup.string().email("Invalid email address").required("Email is required"),
+      username: Yup.string().required("Username is required"),
       password: Yup.string().required("Password is required"),
     }),
     onSubmit: async (values) => {
       setLoading(true);
       setMessage("");
       try {
-        const response = await fetch("https://giwost-server-production.up.railway.app/login", {
+        const response = await fetch("https://giwost-server-production.up.railway.app/admin/login", {
           method: "POST",
           headers: {
             "Content-Type": "application/json"
@@ -35,7 +35,7 @@ export default function LoginPage() {
           body: JSON.stringify(values)
         });
         const result = await response.json();
-        if (result.status === 'success') {
+        if (response.ok) {
           localStorage.setItem('token', result.data.token);
           setMessage("Login successful!");
           setOpenModal(true);
@@ -58,7 +58,7 @@ export default function LoginPage() {
     <div className="flex min-h-screen items-center justify-center px-6 py-12 bg-gray-500">
       <div className="w-full max-w-md">
         <div className="flex flex-col items-center">
-       <h1>ADMIN LOGIN</h1>
+          <h1>ADMIN LOGIN</h1>
           <h2 className="mt-6 text-center text-3xl font-bold tracking-tight text-gray-900">
             Sign in to your account
           </h2>
@@ -66,21 +66,21 @@ export default function LoginPage() {
         <form className="mt-8 space-y-6" onSubmit={formik.handleSubmit}>
           <div className="rounded-md shadow-sm -space-y-px">
             <div>
-              <label htmlFor="email" className="sr-only">Email address</label>
+              <label htmlFor="username" className="sr-only">Username</label>
               <input
-                id="email"
-                name="email"
-                type="email"
-                autoComplete="email"
+                id="username"
+                name="username"
+                type="text"
+                autoComplete="username"
                 required
                 className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
-                placeholder="Email address"
+                placeholder="Username"
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
-                value={formik.values.email}
+                value={formik.values.username}
               />
-              {formik.touched.email && formik.errors.email ? (
-                <div className="text-red-600">{formik.errors.email}</div>
+              {formik.touched.username && formik.errors.username ? (
+                <div className="text-red-600">{formik.errors.username}</div>
               ) : null}
             </div>
             <div>
@@ -119,6 +119,7 @@ export default function LoginPage() {
             >
               {loading ? 'Signing in...' : 'Sign in'}
             </button>
+            <h1 className="text-white py-5">{message}</h1>
           </div>
         </form>
         <p className="mt-2 text-center text-sm text-gray-600">

@@ -30,7 +30,13 @@ body{
 }
 
 .bghos{
-  background-image: url("/pic3.webp");
+  background-image: url("/pc3.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bgser{
+  background-image: url("/services.webp");
   background-size: cover;
   background-repeat: no-repeat;
 }

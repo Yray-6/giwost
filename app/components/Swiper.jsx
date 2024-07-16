@@ -63,7 +63,7 @@ function SimpleSlider() {
 
     
       </div>
-      <div className="text-center text-white pt-56 lg:pt-40 px-2 lg:px-0 flex items-center w-full justify-center bgho h-screen  relative">
+      <div className="text-center text-white pt-56 lg:pt-40 px-2 lg:px-0 flex items-center w-full justify-center bghos h-screen  relative">
         <div className="absolute inset-0 bg-black opacity-30"></div>
         <div className="relative z-10">
           <p className="mb-6 lg:text-base text-sm font-bold">WE ARE</p>
