@@ -1,4 +1,3 @@
-'use client'
 // components/FloatingWhatsApp.js
 import { useState } from 'react';
 import { FaWhatsapp } from 'react-icons/fa';
@@ -12,9 +11,10 @@ const FloatingWhatsApp = () => {
 
   return (
     <div className="fixed bottom-4 right-4">
-      <div className="relative">
+      <div className="relative flex items-center space-x-2">
+        <span className="hidden sm:inline bg-white py-3 px-5 rounded text-black font-semibold">Chat with us</span>
         <button
-          className="bg-green-500 text-white p-3 rounded-full shadow-lg"
+          className="bg-green-500 text-white p-3 rounded-full shadow-lg flex items-center"
           onClick={toggleMenu}
         >
           <FaWhatsapp size={24} />

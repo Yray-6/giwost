@@ -110,7 +110,7 @@ export default function Home() {
             <hr className="w-16 border border-red-500"></hr>
           </div>
           <div className="lg:grid flex flex-col  justify-center lg:grid-cols-10 px-5 lg:px-[10%] pt-12 bg-gray-100">
-            <div className="col-span-7 lg:pr-4 text-black">
+            <div className="col-span-7 lg:pr-4 lg:text-left text-black">
               <p className="mb-2 font-semibold text-left">
                 COMPLETE HEALTH AND SOCIAL CARE BUNDLE: SOCIAL CAREGIVER AND
                 HEALTH CARE ASSISTANT; it has 5 Certificate diploma and 21
@@ -146,7 +146,9 @@ export default function Home() {
               <p className="font-bold text-left">
                 ORIGINAL PRICE PRICE: N250,000
               </p>
+              <button className="bg-bluu px-4 text-white rounded my-7 py-2">ENROLL</button>
             </div>
+            <div className="col-span-3">
             <div className="flex my-5 col-span-3 lg:mx-0 mx-7 relative justify-center">
               <Image
                 src="/1pic.webp"
@@ -162,8 +164,10 @@ export default function Home() {
                 Healthcare Assistant and <br></br> Social Caregiver
               </div>
             </div>
+            </div>
           </div>
           <div className="lg:grid flex flex-col-reverse justify-center lg:grid-cols-10 px-5 lg:px-[10%] py-12 bg-white">
+            <div className=" col-span-3">
             <div className="flex col-span-3 my-5 lg:mx-0 mx-7 relative justify-center">
               <Image
                 src="/2pic.webp"
@@ -179,7 +183,8 @@ export default function Home() {
                 Healthcare Assistant
               </div>
             </div>
-            <div className="col-span-7 lg:pl-4 text-black">
+            </div>
+            <div className="col-span-7 lg:text-left lg:pl-4 text-black">
               <p className="mb-2 font-semibold text-left">
                 HEALTH CARE ASSISTANT BUNDLE (formerly known as Nurse
                 Assistant): it has 2 Diploma and 5 other Certificates in this
@@ -206,10 +211,11 @@ export default function Home() {
               </p>
               <p className="font-bold text-left">PROMO PRICE: N136,000</p>
               <p className="font-bold text-left">ORIGINAL PRICE: N170,000</p>
+              <button className="bg-bluu px-4 text-white rounded my-7 py-2">ENROLL</button>
             </div>
           </div>
           <div className="lg:grid flex flex-col justify-center lg:grid-cols-10 px-5 lg:px-[10%] py-12 bg-gray-100">
-            <div className="col-span-7 lg:pr-4 text-black">
+            <div className="col-span-7 lg:text-left lg:pr-4 text-black">
               <p className="mb-2 font-semibold text-left">
                 SOCIAL CAREGIVER BUNDLE: It has 2 Diploma and 5 Certificates in
                 it.
@@ -233,9 +239,10 @@ export default function Home() {
               </p>
               <p className="font-bold text-left">PROMO PRICE: N120,000</p>
               <p className="font-bold text-left">ORIGINAL PRICE: N150,000</p>
+              <button className="bg-bluu px-4 text-white rounded my-7 py-2">ENROLL</button>
             </div>
-
-            <div className="flex col-span-3 my-5 lg:m-0 mx-7 relative justify-center">
+            <div className="col-span-3">
+            <div className="flex  my-5 lg:m-0 mx-7 relative justify-center">
               <Image
                 src="/3pic.webp"
                 alt="service pic"
@@ -251,8 +258,10 @@ export default function Home() {
               </div>
             </div>
           </div>
+          </div>
           <div className="lg:grid flex flex-col-reverse lg:grid-cols-10 px-5 lg:px-[10%] py-12 bg-white">
-          <div className="flex col-span-3 relative my-5 lg:mx-0 mx-7 justify-center">
+            <div className="col-span-3">
+            <div className="flex relative my-5 lg:mx-0 mx-7 justify-center">
               <Image
                 src="/3pic.webp"
                 alt="service pic"
@@ -267,44 +276,83 @@ export default function Home() {
                 Forklift Operator
               </div>
             </div>
-            <div className="col-span-7 lg:pl-4 text-black">
-              <p className="mb-2 font-semibold text-left">
-                COMPLETE HEALTH AND SOCIAL CARE BUNDLE: SOCIAL CAREGIVER AND
-                HEALTH CARE ASSISTANT; it has 5 Certificate diploma and 21
-                Certificates listed below (suitable for all country)
-              </p>
-              <ul className="list-disc text-left list-inside text-sm">
-                <li>Diploma in Health and Social Care at NVQ Level 3</li>
-                <li>Diploma in Health Care Assistant at NVQ Level 3</li>
-                <li>Diploma in Adult Social Care at NVQ Level 3</li>
-                <li>Diploma in Support Worker at NVQ Level 3</li>
-                <li>Diploma in Child Care at NVQ Level 3</li>
-                <li>15 Care Standard Certificate</li>
-                <li>Patients Care and Hygiene</li>
-                <li>Care & Management of Dementia</li>
-                <li>CPD Accredited First Aid and CPR Certificate</li>
-                <li>BLS – Basic Life Support Certificate</li>
-                <li>
-                  Certificate in Health and Safety for Health Care Professionals
-                </li>
-                {/* <li>Manual Handling Certificate</li>
-                <li>Hospital Recommendation Letter</li>
-                <li>900hrs Student Transcript</li>
-                <li>FREE INTERNATIONAL CV TEMPLATE & JOB LINKS</li> */}
-              </ul>
-              <p className="py-3 text-xs text-left">
-                Duration: One week Theory class & 3 Weeks clinical training (3
-                times a week). Weekend/Part-time class: 12 weekends including
-                clinical Training, 5 weekends without Clinical Training, class
-                holds Every Saturdays 10am online only. Training Mode: Classroom
-                or Online Instalmental Plan: to be paid in 2 or 3 instalments
-              </p>
-              <p className="font-bold text-left">PROMO PRICE: N200,000</p>
-              <p className="font-bold text-left">
-                ORIGINAL PRICE PRICE: N250,000
-              </p>
             </div>
-         
+            <div className="col-span-7 pl-4 lg:text-left text-black">
+              <p className="mb-2 font-semibold text-left">
+                Course Introduction
+              </p>
+              <p className="text-left text-sm">
+                This Forklift Operations & Maintenance (FOM) Training Course Is
+                To Offer Professional Personnel, Newbies Trainee And Other
+                Professionals Involved In Forklift Operations IADC, LEEA, DPR, &
+                OSHA Standard Hands On Training And Technical Know How Involved
+                In Various Safety Operating Procedures Using Forklift In
+                Different Industrial Sectors As It Includes But Not Limited To
+                Oil And Gas, Construction, Logistic & Warehouse And Maritime
+                Etc.
+              </p>
+              <p className="text-left text-sm">
+                This course aims to give candidates the necessary skills and
+                knowledge to plan, prepare and operate a forklift safely and
+                efficiently in accordance with Best International Standard for
+                Licensing Persons Performing High Risk Work. On completion of
+                this course candidates will be able to conduct routine checks;
+                plan work; check, controls, operate, Tilling, shift OF various
+                load types and shut down a forklift truck.
+              </p>
+              <p className="text-left text-sm">
+                Our Forklift operation and maintenance training comes with
+                additional training and certificates in HSE Level 1, 2 & 3 and
+                warehouse/inventory management thus, making our students stand
+                out among the crowd as each participant goes home with 6
+                different Certificates at the end of the training.
+              </p>
+
+              <p className="mb-2 font-semibold text-left">
+                Who should Attend our Forklift Class?
+              </p>
+              <p className="text-left text-sm">
+                This Course Is for People with Little or No Operational
+                Experience and Who Would Like to Obtain the Professional
+                Required Level of Knowledge/Skill Needed to Safely Operate A
+                Forklift (Class 1-6). This Course Complies With IADC, LEEA, DPR,
+                WSO & OSHA standard for Training Forklift Operators. Included
+                Will Be A Demonstration and Hands-On Training Portion. This Will
+                Be Followed by A Proficiency Demonstration and An Operator
+                Performance Evaluation. A Professional Certificate of Training
+                Will Be Awarded Upon Successful Completion*.
+              </p>
+              <p className="text-left text-sm">
+                As Part of Our Commitment to Forklift Safety our institute
+                Offers Forklift Operations and Maintenance Training alongside
+                with HSE level 1,2 & 3 and Warehouse Management training.
+              </p>
+
+              <p className="mb-2 font-semibold text-left">
+                How Our Training Works!
+              </p>
+              <p className="text-left text-sm">
+                Our program is comprised of one week theoretical
+                classroom/online session and another one week test and practical
+                forklift driver training component and upon successful
+                completion the student receives their certificate to operate the
+                specific classes of lift trucks that have been covered.
+              </p>
+              <p className="text-left text-sm">
+                Our students can join our theory class online from the comfort
+                of their home/office from wherever they are for the first one
+                week, then resume practical class at our facility in the second
+                week.
+              </p>
+
+              <p className="py-3 text-xs text-left">
+                Duration: 2 weeks (1 week classroom/online theory training and 1
+                week practical training)
+              </p>
+              <p className="font-bold text-left">Price: N150,000 naira only</p>
+              <p className="font-bold text-left">Location: Port Harcourt</p>
+              <button className="bg-bluu px-4 text-white rounded my-7 py-2">ENROLL</button>
+            </div>
           </div>
         </div>
       </div>
@@ -602,16 +650,19 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className=" grid font-serif text-white lg:grid-cols-10 mt-12">
-        <div className="col-span-6 bg-bluu pl-[15%] pr-20 flex flex-col gap-1 py-12 lg:py-20 ">
-          <div className="flex gap-4 lg:gap-7 items-center mb-3 lg:mb-5">
+      <div className=" lg:grid font-serif text-white lg:grid-cols-10 mt-12">
+        <div className="lg:col-span-6 bg-bluu lg:pl-[15%] lg:pr-20 lg:flex lg:flex-col gap-1 py-12 lg:py-20 ">
+          <div className="flex gap-4 px-5 lg:gap-7 items-center mb-3 lg:mb-5">
             <p className="font-serif">Testimonials</p>
             <hr className="w-20 border border-red-500"></hr>
           </div>
-          <p className=" font-serif text-2xl lg:text-4xl mb-20">
+          <p className="px-5 font-serif text-2xl lg:text-4xl mb-20">
             We are excited to share trainees review
           </p>
-          {/* <Testimony className="hidden overflow-hidden lg:block"/> */}
+          <div>
+          <Testimony />
+          </div>
+         
         </div>
         <div className="col-span-4 py-5 lg:py-16">
           <div>

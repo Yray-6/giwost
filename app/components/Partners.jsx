@@ -9,35 +9,28 @@ export default function Partners() {
           src="/Logo.png"
           width={90}
           height={50}
-          className="block w-12"
+          className="block w-12 lg:w-20"
           alt="logo"
         />
         <Image
-          src="/Logo.png"
+          src="/partner1.png"
           width={90}
           height={50}
-          className="block w-12"
+          className="block w-12 lg:w-20"
           alt="logo"
         />
         <Image
-          src="/Logo.png"
+          src="/partner2.png"
           width={90}
           height={50}
-          className="block w-12"
+          className="block w-12 lg:w-20"
           alt="logo"
         />
         <Image
-          src="/Logo.png"
+          src="/partner3.png"
           width={90}
           height={50}
-          className="block w-12"
-          alt="logo"
-        />
-        <Image
-          src="/Logo.png"
-          width={90}
-          height={50}
-          className="block w-12"
+          className="block w-12 lg:w-20"
           alt="logo"
         />
       </div>

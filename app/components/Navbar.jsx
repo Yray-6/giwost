@@ -6,9 +6,12 @@ import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import NavLinks from './Navlinks';
+import clsx from 'clsx'
+import { usePathname } from 'next/navigation'
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -26,7 +29,9 @@ export default function Navbar() {
   }, []);
 
   return (
-    <div className={`w-full absolute z-50 text-white ${isScrolled ? 'relative text-black' : 'bg-transparent'}`}>
+    <div className={clsx(`w-full absolute z-50 text-white ${isScrolled ? 'relative text-black' : 'bg-transparent'}`,{
+      "hidden": pathname.startsWith("/dashboard")
+    })}>
       <div className='border-b border-b-white px-28 flex text-[13px] py-2 justify-between bg-transparent'>
         <div className='flex gap-7'>
           <p><FontAwesomeIcon icon={faEnvelope}/> info@giwost.com</p>

@@ -19,7 +19,7 @@ function Testimony() {
 
   
   return (
-    <div className="slider-container">
+    <div className="slider-container px-5">
       <Slider {...settings}>
         <div>
         <p className="text-xl">Mr Alphonus</p>
