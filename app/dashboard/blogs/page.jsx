@@ -4,30 +4,55 @@ import React, { useState } from 'react';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import { useRouter } from 'next/navigation';
+import { useDropzone } from 'react-dropzone';
 
 export default function BlogFormPage() {
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState("");
   const [openModal, setOpenModal] = useState(false);
+  const [imageFile, setImageFile] = useState(null);
   const router = useRouter();
 
   const handleCloseModal = () => setOpenModal(false);
+
+  const onDrop = (acceptedFiles) => {
+    setImageFile(acceptedFiles[0]);
+  };
+
+  const { getRootProps, getInputProps } = useDropzone({ onDrop, accept: 'image/*' });
 
   const formik = useFormik({
     initialValues: {
       topic: "",
       description: "",
-      imageUrl: "",
     },
     validationSchema: Yup.object({
       topic: Yup.string().required("Topic is required"),
       description: Yup.string().required("Description is required"),
-      imageUrl: Yup.string().url("Invalid URL format").required("Image URL is required"),
     }),
     onSubmit: async (values) => {
+      if (!imageFile) {
+        setMessage("Image is required");
+        setOpenModal(true);
+        return;
+      }
+
       setLoading(true);
       setMessage("");
+
       try {
+        const formData = new FormData();
+        formData.append('file', imageFile);
+        formData.append('upload_preset', 'giwost'); // Add your upload preset here
+
+        const cloudinaryResponse = await fetch(`https://api.cloudinary.com/v1_1/dghwjez0a/image/upload`, {
+          method: 'POST',
+          body: formData,
+        });
+
+        const cloudinaryResult = await cloudinaryResponse.json();
+        values.imageUrl = cloudinaryResult.secure_url;
+
         const token = localStorage.getItem('token'); // Get the token from local storage
         const response = await fetch("https://giwost-server-production.up.railway.app/admin/blog", {
           method: "POST",
@@ -38,6 +63,7 @@ export default function BlogFormPage() {
           body: JSON.stringify(values),
         });
         const result = await response.json();
+
         if (response.ok) {
           setMessage("Blog Post successfully created!");
           setOpenModal(true);
@@ -102,22 +128,15 @@ export default function BlogFormPage() {
                 ) : null}
               </div>
               <div>
-                <label htmlFor="imageUrl" className="sr-only">Image URL</label>
-                <input
-                  id="imageUrl"
-                  name="imageUrl"
-                  type="text"
-                  autoComplete="imageUrl"
-                  required
-                  className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
-                  placeholder="Image URL"
-                  onChange={formik.handleChange}
-                  onBlur={formik.handleBlur}
-                  value={formik.values.imageUrl}
-                />
-                {formik.touched.imageUrl && formik.errors.imageUrl ? (
-                  <div className="text-red-600">{formik.errors.imageUrl}</div>
-                ) : null}
+                <label htmlFor="imageUrl" className="sr-only">Image</label>
+                <div {...getRootProps()} className="border-dashed border-2 p-2 text-center">
+                  <input {...getInputProps()} />
+                  {imageFile ? (
+                    <p>{imageFile.name}</p>
+                  ) : (
+                    <p>Drag 'n' drop an image here, or click to select one</p>
+                  )}
+                </div>
               </div>
             </div>
 
