@@ -1,8 +1,10 @@
+import Image from "next/image";
+
 // components/CourseCard.js
 const CourseCard = ({ image, name, description }) => {
     return (
       <div className="bg-white shadow-lg rounded-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-2xl">
-        <img src={image} alt={name} className="w-full h-48 object-cover" />
+        <Image src={image} alt={name} width={1000} height={100} className="w-full h-48 object-cover" />
         <div className="p-4">
           <h3 className="text-base font-semibold text-gray-800">{name}</h3>
           <p className="text-gray-600 text-sm mt-2">{description}</p>

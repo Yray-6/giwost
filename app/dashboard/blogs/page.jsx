@@ -129,12 +129,12 @@ export default function BlogFormPage() {
               </div>
               <div>
                 <label htmlFor="imageUrl" className="sr-only">Image</label>
-                <div {...getRootProps()} className="border-dashed border-2 p-2 text-center">
+                <div {...getRootProps()} className="border-dashed border-2 mt-5 p-2 text-center">
                   <input {...getInputProps()} />
                   {imageFile ? (
                     <p>{imageFile.name}</p>
                   ) : (
-                    <p>Drag 'n' drop an image here, or click to select one</p>
+                    <p>Drag and drop an image here, or click to select one</p>
                   )}
                 </div>
               </div>

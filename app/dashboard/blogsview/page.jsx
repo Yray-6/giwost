@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
 
 export default function AllBlogsPage() {
@@ -98,7 +99,7 @@ export default function AllBlogsPage() {
                         <td className="px-6 py-4 whitespace-nowrap">{blog.topic}</td>
                         <td className="px-6 py-4 whitespace-nowrap">{blog.description}</td>
                         <td className="px-6 py-4 whitespace-nowrap">
-                          <img src={blog.imageUrl} alt={blog.topic} className="w-16 h-16 object-cover" />
+                          <Image src={blog.imageUrl} height={100} width={1000} alt={blog.topic} className="w-16 h-16 object-cover" />
                         </td>
                         <td className="px-6 py-4 whitespace-nowrap">{new Date(blog.createdAt).toLocaleDateString()}</td>
                         <td className="px-6 py-4 whitespace-nowrap">{new Date(blog.updatedAt).toLocaleDateString()}</td>
