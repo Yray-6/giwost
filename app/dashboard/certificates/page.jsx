@@ -139,7 +139,7 @@ const CertificatesPage = () => {
             </div>
             <div>
               <label htmlFor="fatherName" className="block text-sm font-medium text-gray-700">
-                Father's Name
+                Father&apos;s Name
               </label>
               <input
                 id="fatherName"
@@ -157,7 +157,7 @@ const CertificatesPage = () => {
             </div>
             <div>
               <label htmlFor="motherName" className="block text-sm font-medium text-gray-700">
-                Mother's Name
+                Mother&apos;s Name
               </label>
               <input
                 id="motherName"

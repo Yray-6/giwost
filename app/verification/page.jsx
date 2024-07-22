@@ -74,8 +74,8 @@ const Verification = () => {
             <p><strong>Certificate Number:</strong> {certificateData.certificateNumber}</p>
             <p><strong>Course:</strong> {certificateData.course}</p>
             <p><strong>Student Name:</strong> {certificateData.studentName}</p>
-            <p><strong>Father's Name:</strong> {certificateData.fatherName}</p>
-            <p><strong>Mother's Name:</strong> {certificateData.motherName}</p>
+            <p><strong>Father&apos;s Name:</strong> {certificateData.fatherName}</p>
+            <p><strong>Mother&apos;s Name:</strong> {certificateData.motherName}</p>
             <p><strong>Issued Date:</strong> {new Date(certificateData.issuedDate).toLocaleDateString()}</p>
             <p><strong>Date of Birth:</strong> {new Date(certificateData.dob).toLocaleDateString()}</p>
             <p><strong>Gender:</strong> {certificateData.gender}</p>
