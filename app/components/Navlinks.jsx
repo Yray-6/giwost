@@ -23,7 +23,7 @@ const links = [
   },
   {
     name: "FAQs",
-    href: "/faq",
+    href: "/faqs",
   },
   {
     name: "Verification",

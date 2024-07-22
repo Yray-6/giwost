@@ -22,7 +22,7 @@ export default function AllBlogsPage() {
       try {
         const response = await fetch('https://giwost-server-production.up.railway.app/admin/blog', {
           headers: {
-            'Authorization': `Bearer ${token}`, // Include the token in the Authorization header
+            // 'Authorization': `Bearer ${token}`, // Include the token in the Authorization header
             'Content-Type': 'application/json'
           }
         });

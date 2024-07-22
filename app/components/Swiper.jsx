@@ -4,6 +4,7 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Link from "next/link";
 
 function SimpleSlider() {
   const settings = {
@@ -33,9 +34,9 @@ function SimpleSlider() {
             Experience the power of knowledge. Gain the skills to lead your
             career.
           </p>
-          <button className=" bg-blu py-2 px-4 lg:text-lg rounded-xl mt-12">
+          <Link href="https://forms.gle/TdZPNCvoYkCgTKRy7" target="blank">   <button className=" bg-blu py-2 px-4 lg:text-lg rounded-xl mt-12">
             GET ENROLLED
-          </button>
+          </button></Link>
         </div>
 
     
@@ -55,9 +56,9 @@ function SimpleSlider() {
           <p className="mt-8 lg:text-base text-sm font-bold">
           Experience standard Certification and improove your skill set and become employable
           </p>
-          <button className=" bg-blu py-2 px-4 lg:text-lg rounded-xl mt-12">
+       <Link href="https://forms.gle/TdZPNCvoYkCgTKRy7" target="blank">   <button className=" bg-blu py-2 px-4 lg:text-lg rounded-xl mt-12">
             GET ENROLLED
-          </button>
+          </button></Link>
         </div>
         
 
@@ -77,9 +78,9 @@ function SimpleSlider() {
           <p className="mt-8 lg:text-base text-sm font-bold">
           Gain valuable skills and knowledge through CPD courses from trusted providers.
           </p>
-          <button className=" bg-blu py-2 px-4 lg:text-lg rounded-xl mt-12">
+          <Link href="https://forms.gle/TdZPNCvoYkCgTKRy7" target="blank">   <button className=" bg-blu py-2 px-4 lg:text-lg rounded-xl mt-12">
             GET ENROLLED
-          </button>
+          </button></Link>
         </div>
         
 

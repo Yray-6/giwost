@@ -146,7 +146,7 @@ export default function Home() {
               <p className="font-bold text-left">
                 ORIGINAL PRICE PRICE: N250,000
               </p>
-              <button className="bg-bluu px-4 text-white rounded my-7 py-2">ENROLL</button>
+        <Link href="https://forms.gle/TdZPNCvoYkCgTKRy7" target="blank"> <button className="bg-bluu px-4 text-white rounded my-7 py-2">ENROLL</button></Link>     
             </div>
             <div className="col-span-3">
             <div className="flex my-5 col-span-3 lg:mx-0 mx-7 relative justify-center">
@@ -211,7 +211,7 @@ export default function Home() {
               </p>
               <p className="font-bold text-left">PROMO PRICE: N136,000</p>
               <p className="font-bold text-left">ORIGINAL PRICE: N170,000</p>
-              <button className="bg-bluu px-4 text-white rounded my-7 py-2">ENROLL</button>
+         <Link href="https://forms.gle/TdZPNCvoYkCgTKRy7" target="blank"><button className="bg-bluu px-4 text-white rounded my-7 py-2">ENROLL</button></Link>     
             </div>
           </div>
           <div className="lg:grid flex flex-col justify-center lg:grid-cols-10 px-5 lg:px-[10%] py-12 bg-gray-100">
@@ -239,7 +239,7 @@ export default function Home() {
               </p>
               <p className="font-bold text-left">PROMO PRICE: N120,000</p>
               <p className="font-bold text-left">ORIGINAL PRICE: N150,000</p>
-              <button className="bg-bluu px-4 text-white rounded my-7 py-2">ENROLL</button>
+              <Link href="https://forms.gle/TdZPNCvoYkCgTKRy7" target="blank"><button className="bg-bluu px-4 text-white rounded my-7 py-2">ENROLL</button></Link>     
             </div>
             <div className="col-span-3">
             <div className="flex  my-5 lg:m-0 mx-7 relative justify-center">
@@ -351,7 +351,7 @@ export default function Home() {
               </p>
               <p className="font-bold text-left">Price: N150,000 naira only</p>
               <p className="font-bold text-left">Location: Port Harcourt</p>
-              <button className="bg-bluu px-4 text-white rounded my-7 py-2">ENROLL</button>
+              <Link href="https://forms.gle/TdZPNCvoYkCgTKRy7" target="blank"><button className="bg-bluu px-4 text-white rounded my-7 py-2">ENROLL</button></Link>     
             </div>
           </div>
         </div>

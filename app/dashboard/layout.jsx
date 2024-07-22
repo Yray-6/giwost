@@ -18,6 +18,10 @@ const Layout = ({ children }) => {
         <nav className="mt-10">
           <Link className="flex items-center py-2 px-8 text-gray-300 hover:bg-gray-700 hover:text-white" href="/dashboard/certificates">
             <FaClipboardList className="w-6 h-6 mr-3" />
+           Add Certificates
+          </Link>
+          <Link className="flex items-center py-2 px-8 text-gray-300 hover:bg-gray-700 hover:text-white" href="/dashboard/certificateview">
+            <FaClipboardList className="w-6 h-6 mr-3" />
             Certificates
           </Link>
           <Link href="/dashboard/blogs" className="flex items-center py-2 px-8 text-gray-300 hover:bg-gray-700 hover:text-white">

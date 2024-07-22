@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 // components/CourseCard.js
 const CourseCard = ({ image, name, description }) => {
@@ -8,9 +9,9 @@ const CourseCard = ({ image, name, description }) => {
         <div className="p-4">
           <h3 className="text-base font-semibold text-gray-800">{name}</h3>
           <p className="text-gray-600 text-sm mt-2">{description}</p>
-          <button className="mt-4 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">
+         <Link href="https://forms.gle/TdZPNCvoYkCgTKRy7" target="blank"><button className="mt-4 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">
             Enroll Now
-          </button>
+          </button></Link> 
         </div>
       </div>
     );
