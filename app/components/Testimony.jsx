@@ -39,7 +39,7 @@ function Testimony() {
         <p className="text-xl">Mrs Hannah Ogbu</p>
           <p className=" text-gray-400 mb-4">Warri</p>
           <p className="text-xl italic">
-          I was impressed by the depth of the content and the expertise of the instructors. The interactive sessions kept me engaged, and the course materials were top-notch. I've recommended this training to all my colleagues who are eager to enhance their skills.
+          I was impressed by the depth of the content and the expertise of the instructors. The interactive sessions kept me engaged, and the course materials were top-notch. I&apos;ve recommended this training to all my colleagues who are eager to enhance their skills.
           </p>
         </div>
         <div>
