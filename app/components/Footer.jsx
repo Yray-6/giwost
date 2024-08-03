@@ -36,7 +36,8 @@ export default function Footer() {
               Suite 25/26 longjohn plaza, beside market square, mile 4, rumueme,
               port harcourt, River state.
             </p>
-            <p>48 allen road, opposite union bank, ikeja, lagos state. </p>
+            <p className="mb-5">48 allen road, opposite union bank, ikeja, lagos state. </p>
+            <p>futeb plaza opposite refinery junction, effurun-sapele road, warri delta state.</p>
           </div>
           <div className="col-span-1 lg:pr-5 flex-col flex gap-3 pt-5">
           <div className="border-l-4 border-l-red-500 text-base font-medium pl-5 mb-3">

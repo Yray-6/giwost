@@ -25,19 +25,19 @@ const FloatingWhatsApp = () => {
               href="https://wa.me/PHONENUMBER1"
               className="block px-4 py-2 text-black hover:bg-gray-200"
             >
-              Lagos WhatsApp
+             Chat with Lagos
             </a>
             <a
               href="https://wa.me/PHONENUMBER2"
               className="block px-4 py-2 text-black hover:bg-gray-200"
             >
-              Warri WhatsApp
+              Chat with Warri
             </a>
             <a
               href="https://wa.me/PHONENUMBER3"
               className="block px-4 py-2 text-black hover:bg-gray-200"
             >
-              PH WhatsApp
+              Chat with PH
             </a>
           </div>
         )}

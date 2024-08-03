@@ -34,9 +34,9 @@ const ToggleContent = () => {
         </button>
       </div>
       <div className="border border-blue-500 rounded-b p-4 w-full max-w-md bg-white shadow transition-all duration-300">
-        {activeTab === 'vision' && <p>To offer a unique and authentic awarding experience for training  organizations globally, by providing the standardized assessment and  certification with international acceptance. </p>}
-        {activeTab === 'mission' && <p>Our mission is to be a leader in the industry by providing quality products and services.</p>}
-        {activeTab === 'values' && <p>Our values are integrity, innovation, and excellence.</p>}
+        {activeTab === 'vision' && <p>to be a pacesetter in providing reliable, affordable yet recognized professional workplace skills training to all industrial sectors globally. </p>}
+        {activeTab === 'mission' && <p>To Bridge the skill gaps in the Workplace</p>}
+        {activeTab === 'values' && <p>Loyalty, Excellence, Accountability,  Integrity  and Diligence is our watch word, We are committed to raising the standards and saving lives!</p>}
       </div>
     </div>
   );
