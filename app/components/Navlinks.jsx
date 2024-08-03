@@ -27,7 +27,7 @@ const links = [
   },
   {
     name: "Verification",
-    href: "http://giwost.com/verification",
+    href: "http://giwost.com/certificate-verification-portal",
   },
   
 ];

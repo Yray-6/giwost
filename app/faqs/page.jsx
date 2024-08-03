@@ -2,6 +2,7 @@ import React from "react";
 import Accordion from "../components/Accordion";
 import Partners from "../components/Partners";
 import Footer from "../components/Footer";
+import FloatingWhatsApp from "../components/Floating";
 
 export default function Faq() {
     const faqs = [
@@ -85,6 +86,7 @@ export default function Faq() {
       </p>
       <Partners />
       <Footer />
+      <FloatingWhatsApp/>
     </div>
   );
 }

@@ -5,6 +5,7 @@ import React from "react";
 import ToggleContent from "../components/Vision";
 import Partners from "../components/Partners";
 import Footer from "../components/Footer";
+import FloatingWhatsApp from "../components/Floating";
 
 export default function About() {
   return (
@@ -188,6 +189,7 @@ export default function About() {
       </div>
       <Partners />
       <Footer />
+      <FloatingWhatsApp/>
     </div>
   );
 }

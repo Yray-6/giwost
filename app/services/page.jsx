@@ -2,6 +2,8 @@ import React from "react";
 import Partners from "../components/Partners";
 import Footer from "../components/Footer";
 import CourseCard from "../components/Course";
+import TableCourses from "../components/TableCourse";
+import FloatingWhatsApp from "../components/Floating";
 
 export default function Verification() {
   const healthAndSafetyCourses = [
@@ -20,6 +22,41 @@ export default function Verification() {
       name: 'FORKLIFT OPERATIONS & MAINTENANCE',
       description: 'Course Introduction This Forklift Operations & Maintenance (FOM) Training Course Is To Offer Professional Personnel, Newbies Trainee And Other Professionals Involved.',
     },
+    {
+      image: '/AB.webp',
+      name: 'DIPLOMA IN WORKPLACE HEALTH AND SAFETY',
+      description: 'This is one of our comprehensive health and safety courses, designed to provide in-depth knowledge and practical skills to ensure a safe and healthy environment. Whether you&apos;re looking to enhance your workplace safety protocols or gain valuable insights into health regulations.',
+    },
+    {
+      image: '/forklift.webp',
+      name: 'Diploma in Modern Project Management',
+      description: 'This is one of our comprehensive health and safety courses, designed to provide in-depth knowledge and practical skills to ensure a safe and healthy environment. Whether you&apos;re looking to enhance your workplace safety protocols or gain valuable insights into health regulations.',
+    },
+    {
+      image: '/banksman-course.webp',
+      name: 'BASIC LIFE SUPPORT (BLS)',
+      description: 'This is one of our comprehensive health and safety courses, designed to provide in-depth knowledge and practical skills to ensure a safe and healthy environment. Whether you&apos;re looking to enhance your workplace safety protocols or gain valuable insights into health regulations.',
+    },
+    {
+      image: '/AB.webp',
+      name: 'HOSPITAL SAFETY (HS)',
+      description: 'This is one of our comprehensive health and safety courses, designed to provide in-depth knowledge and practical skills to ensure a safe and healthy environment. Whether you&apos;re looking to enhance your workplace safety protocols or gain valuable insights into health regulations.',
+    },
+    {
+      image: '/forklift.webp',
+      name: 'ADVANCE HSE SUPERVISOR LEVEL',
+      description: 'This is one of our comprehensive health and safety courses, designed to provide in-depth knowledge and practical skills to ensure a safe and healthy environment. Whether you&apos;re looking to enhance your workplace safety protocols or gain valuable insights into health regulations.',
+    },
+    {
+      image: '/banksman-course.webp',
+      name: 'FIRST AID/CPR',
+      description: 'This is one of our comprehensive health and safety courses, designed to provide in-depth knowledge and practical skills to ensure a safe and healthy environment. Whether you&apos;re looking to enhance your workplace safety protocols or gain valuable insights into health regulations.',
+    },
+    {
+      image: '/forklift.webp',
+      name: 'SAFETY AWARENESS (SA)',
+      description: 'This is one of our comprehensive health and safety courses, designed to provide in-depth knowledge and practical skills to ensure a safe and healthy environment. Whether you&apos;re looking to enhance your workplace safety protocols or gain valuable insights into health regulations.',
+    },
   ];
 
   const businessManagementCourses = [
@@ -36,7 +73,42 @@ export default function Verification() {
     {
       image: '/fork.png',
       name: 'Business Management Course 3',
-      description: 'This is a brief description of Business Management Course 3.',
+      description: "These are our business management courses, meticulously designed to equip you with the essential skills and knowledge required to excel in the dynamic world of business.",
+    },
+    {
+      image: '/QA.jpg',
+      name: 'DIPLOMA IN BUSINESS ADMINISTRATION',
+      description: "These are our business management courses, meticulously designed to equip you with the essential skills and knowledge required to excel in the dynamic world of business.",
+    },
+    {
+      image: '/projectmgt.webp',
+      name: 'SUPPLY CHAIN MANAGEMENT',
+      description: "These are our business management courses, meticulously designed to equip you with the essential skills and knowledge required to excel in the dynamic world of business.",
+    },
+    {
+      image: '/fork.png',
+      name: 'OIL AND GAS BUSINESS MANAGEMENT (OGBM)',
+      description: "These are our business management courses, meticulously designed to equip you with the essential skills and knowledge required to excel in the dynamic world of business.",
+    },
+    {
+      image: '/QA.jpg',
+      name: 'Diploma in Modern Project Management',
+      description: "These are our business management courses, meticulously designed to equip you with the essential skills and knowledge required to excel in the dynamic world of business.",
+    },
+    {
+      image: '/projectmgt.webp',
+      name: 'INVENTORY AND QUALITY MANAGEMENT',
+      description: "These are our business management courses, meticulously designed to equip you with the essential skills and knowledge required to excel in the dynamic world of business.",
+    },
+    {
+      image: '/fork.png',
+      name: 'CUSTOMER RELATIONSHIP MANAGEMENT - CRM',
+      description:"These are our business management courses, meticulously designed to equip you with the essential skills and knowledge required to excel in the dynamic world of business.",
+    },
+    {
+      image: '/QA.jpg',
+      name: 'MANAGEMENT OF CHANGE (MC)',
+      description: "These are our business management courses, meticulously designed to equip you with the essential skills and knowledge required to excel in the dynamic world of business.",
     },
   ];
 
@@ -56,6 +128,41 @@ export default function Verification() {
       name: 'BOSIET – BASIC OFFSHORE SAFETY INDUCTION AND EMERGENCY TRAINING',
       description: 'BOSIET TRAINING course is designed to introduce delegates to the specific issues and regimes relevant to offshore installations.',
     },
+    {
+      image: '/safety2.webp',
+      name: 'OIL AND GAS PROJECT MANAGEMENT (OGPM)',
+      description: "These are our oil and gas training courses, specifically designed to provide you with comprehensive knowledge and practical skills essential for the energy sector. Our curriculum covers a wide range of topics and project management.",
+    },
+    {
+      image: '/oil.webp',
+      name: 'OIL AND GAS CONTRACT PACKAGING AND BIDDING (OGCPB)',
+      description: "These are our oil and gas training courses, specifically designed to provide you with comprehensive knowledge and practical skills essential for the energy sector. Our curriculum covers a wide range of topics and project management.",
+    },
+    {
+      image: '/rig.webp',
+      name: 'OIL AND GAS RIG SAFETY (OGRS)',
+      description: "These are our oil and gas training courses, specifically designed to provide you with comprehensive knowledge and practical skills essential for the energy sector. Our curriculum covers a wide range of topics and project management.",
+    },
+    {
+      image: '/safety2.webp',
+      name: 'ONSHORE/OFFSHORE DRILLING HSE SUPERVISOR (ODHS)',
+      description:"These are our oil and gas training courses, specifically designed to provide you with comprehensive knowledge and practical skills essential for the energy sector. Our curriculum covers a wide range of topics and project management.",
+    },
+    {
+      image: '/oil.webp',
+      name: 'OIL AND GAS HAZARD AWARENESS (OGHA)',
+      description: "These are our oil and gas training courses, specifically designed to provide you with comprehensive knowledge and practical skills essential for the energy sector. Our curriculum covers a wide range of topics and project management.",
+    },
+    {
+      image: '/rig.webp',
+      name: 'OIL AND GAS SUPPLY DISTRIBUTION (OGSD)',
+      description: "These are our oil and gas training courses, specifically designed to provide you with comprehensive knowledge and practical skills essential for the energy sector. Our curriculum covers a wide range of topics and project management.",
+    },
+    {
+      image: '/safety2.webp',
+      name: 'BASIC RIG TRAINING FOR ROUSTABOUT',
+      description: "These are our oil and gas training courses, specifically designed to provide you with comprehensive knowledge and practical skills essential for the energy sector. Our curriculum covers a wide range of topics and project management.",
+    },
   ];
 
   const isoCertificatesCourses = [
@@ -64,7 +171,9 @@ export default function Verification() {
       name: 'ISO 9001:2015 (QMS) LEAD AUDITOR COURSE',
       description: 'Quality Management System Training (QMS) ISO 9001:2015 Lead Auditor course focuses on the knowledge and skills required to perform an audit of a quality management system based on ISO 9001 and report on the effective implementation and maintenance of the management system.',
     },
+  
   ];
+  
 
   const renderCourses = (courses) => {
     return courses.map((course, index) => (
@@ -112,7 +221,7 @@ export default function Verification() {
         <div className="pb-5">
         We offer a comprehensive suite of health and safety training and certification in health, safety and environmental management. We educate people all over the world to help them improve their knowledge and skills, reduce risks, increase their chance for jobs/promotion, make workplaces healthier and safer for everyone and improve long-term business performance.
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {renderCourses(healthAndSafetyCourses)}
         </div>
 
@@ -139,7 +248,7 @@ export default function Verification() {
           <li>Any professional aspiring to be a Project Manager</li>
         </ul>
       </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {renderCourses(businessManagementCourses)}
         </div>
 
@@ -157,7 +266,7 @@ export default function Verification() {
 
 
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {renderCourses(oilAndGasCourses)}
         </div>
 
@@ -175,7 +284,7 @@ export default function Verification() {
           {renderCourses(isoCertificatesCourses)}
         </div>
       </div>
-      
+      <TableCourses/>
 
         <div className=" relative bgser text-white text-center px-4 lg:px-[15%] py-12">
         <div className="absolute inset-0 bg-black opacity-30"></div>
@@ -186,8 +295,10 @@ export default function Verification() {
             <p className="relative z-20 py-4 font-bold text-2xl">We have the best Training platforms and systems</p>
             <button className="bg-orange-600 relative z-20 py-2 px-2 rounded font-medium text-lg text-white">Get Started Now</button>
         </div>
+     
       <Partners />
       <Footer />
+      <FloatingWhatsApp/>
     </div>
   );
 }

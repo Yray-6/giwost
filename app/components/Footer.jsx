@@ -46,6 +46,7 @@ export default function Footer() {
             <Link href="/" className="hover:text-red-500">Home</Link>
             <Link href="/faq" className="hover:text-red-500">FAQS</Link>
             <Link href="/About" className="hover:text-red-500">About us</Link>
+            <Link href="/hospital" className="hover:text-red-500">Hospital Partners</Link>
           </div>
         </div>
         <div className="text-center font-bold pt-4">

@@ -1,4 +1,5 @@
-// components/FloatingWhatsApp.js
+'use client'
+import Link from 'next/link';
 import { useState } from 'react';
 import { FaWhatsapp } from 'react-icons/fa';
 
@@ -21,24 +22,27 @@ const FloatingWhatsApp = () => {
         </button>
         {isOpen && (
           <div className="absolute bottom-12 right-0 bg-white shadow-lg w-32 rounded-lg overflow-hidden">
-            <a
-              href="https://wa.me/PHONENUMBER1"
+            <Link
+              href="https://wa.me/+2348153305108"
+              target='blank'
               className="block px-4 py-2 text-black hover:bg-gray-200"
             >
              Chat with Lagos
-            </a>
-            <a
-              href="https://wa.me/PHONENUMBER2"
+            </Link>
+            <Link
+              href="https://wa.me/+2349033880926"
+              target='blank'
               className="block px-4 py-2 text-black hover:bg-gray-200"
             >
               Chat with Warri
-            </a>
-            <a
-              href="https://wa.me/PHONENUMBER3"
+            </Link>
+            <Link
+              href="https://wa.me/+2347089597079"
+              target='blank'
               className="block px-4 py-2 text-black hover:bg-gray-200"
             >
               Chat with PH
-            </a>
+            </Link>
           </div>
         )}
       </div>
