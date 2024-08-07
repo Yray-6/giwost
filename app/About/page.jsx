@@ -176,7 +176,7 @@ export default function About() {
               Join us to upgrade your institute with international
               certification. Our globally acclaimed systems in assessment &
               certification will help your trainees reach greater heights. The
-              partnership with Skill Development Council Canada Inc will support
+              partnership with Global Institute of Workplace Skills Training will support
               you to constantly grow every year.
             </p>
             <Link href="/service">

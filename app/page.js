@@ -322,7 +322,7 @@ export default function Home() {
           <div className="grid grid-cols-10">
             <div className="col-span-8 text-left pr-6">
               <p className="font-bold text-xl pb-5 lg:text-2xl">
-                Flexible Assessments
+                Flexible Training
               </p>
               <div className="text-sm">
                 <p>
