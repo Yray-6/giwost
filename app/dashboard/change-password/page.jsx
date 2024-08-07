@@ -28,7 +28,7 @@ const ChangePasswordPage = () => {
           return;
         }
 
-        const response = await fetch("https://giwost-server-production.up.railway.app/admin/reset-password", {
+        const response = await fetch("https://giwost-server.onrender.com/admin/reset-password", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

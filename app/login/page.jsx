@@ -27,7 +27,7 @@ export default function LoginPage() {
       setLoading(true);
       setMessage("");
       try {
-        const response = await fetch("https://giwost-server-production.up.railway.app/admin/login", {
+        const response = await fetch("https://giwost-server.onrender.com/admin/login", {
           method: "POST",
           headers: {
             "Content-Type": "application/json"

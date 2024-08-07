@@ -39,7 +39,7 @@ const CertificatesPage = () => {
 
       try {
         const token = localStorage.getItem('token'); // Get the token from local storage
-        const response = await fetch("https://giwost-server-production.up.railway.app/admin/certificate", {
+        const response = await fetch("https://giwost-server.onrender.com/admin/certificate", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

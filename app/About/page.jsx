@@ -170,7 +170,7 @@ export default function About() {
               <hr className="w-20 border border-red-500"></hr>
             </div>
             <p className="lg:text-2xl text-xl font-semibold">
-              TRUSTED BY MORE THAT 2K CLIENTS
+              TRUSTED BY MORE THAN 1M CLIENTS
             </p>
             <p className="lg:text-sm text-xs">
               Join us to upgrade your institute with international

@@ -716,7 +716,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="absolute z-40 -top-16 right-[15%]">
+        {/* <div className="absolute z-40 -top-16 right-[15%]">
           {" "}
           <Image
             src="/fork.png"
@@ -725,7 +725,7 @@ export default function Home() {
             height={100}
             width={700}
           />
-        </div>
+        </div> */}
         <div className="absolute inset-0 bg-white opacity-80"></div>
       </div>
  

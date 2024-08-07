@@ -46,8 +46,8 @@ function Testimony() {
         <p className="text-xl">Mr Nnamdi Eze</p>
           <p className=" text-gray-400 mb-4">Port Hacourt</p>
           <p className="text-xl italic">
-       The training provided practical knowledge and tools that I could apply immediately. The instructors were passionate and supportive, ensuring that every student understood the concepts. I left the course feeling inspired and equipped to excel in my field.
-       </p>
+            The training provided practical knowledge and tools that I could apply immediately. The instructors were passionate and supportive, ensuring that every student understood the concepts. I left the course feeling inspired and equipped to excel in my field.
+          </p>
         </div>
         
       </Slider>

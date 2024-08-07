@@ -51,7 +51,7 @@ function SwipeN() {
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
-        const response = await fetch('https://giwost-server-production.up.railway.app/admin/blog',{
+        const response = await fetch('https://giwost-server.onrender.com/admin/blog',{
             headers: {
               'Content-Type': 'application/json'
             }

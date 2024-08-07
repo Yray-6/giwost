@@ -54,7 +54,7 @@ export default function BlogFormPage() {
         values.imageUrl = cloudinaryResult.secure_url;
 
         const token = localStorage.getItem('token'); // Get the token from local storage
-        const response = await fetch("https://giwost-server-production.up.railway.app/admin/blog", {
+        const response = await fetch("https://giwost-server.onrender.com/admin/blog", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

@@ -13,7 +13,7 @@ const CertificatesTablePage = () => {
       setError("");
       try {
         const token = localStorage.getItem('token'); // Get the token from local storage
-        const response = await fetch(`https://giwost-server-production.up.railway.app/admin/certificate`, {
+        const response = await fetch(`https://giwost-server.onrender.com/admin/certificate`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -43,7 +43,7 @@ const CertificatesTablePage = () => {
     setLoading(true);
     try {
       const token = localStorage.getItem('token'); // Get the token from local storage
-      const response = await fetch(`https://giwost-server-production.up.railway.app/admin/certificate/${certificateId}`, {
+      const response = await fetch(`https://giwost-server.onrender.com/admin/certificate/${certificateId}`, {
         method: 'DELETE',
         headers: {
           Authorization: `Bearer ${token}`,

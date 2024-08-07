@@ -20,7 +20,7 @@ export default function AllBlogsPage() {
       }
 
       try {
-        const response = await fetch('https://giwost-server-production.up.railway.app/admin/blog', {
+        const response = await fetch('https://giwost-server.onrender.com/admin/blog', {
           headers: {
             // 'Authorization': `Bearer ${token}`, // Include the token in the Authorization header
             'Content-Type': 'application/json'
@@ -50,7 +50,7 @@ export default function AllBlogsPage() {
     }
 
     try {
-      const response = await fetch(`https://giwost-server-production.up.railway.app/admin/blog/${id}`, {
+      const response = await fetch(`https://giwost-server.onrender.com/admin/blog/${id}`, {
         method: 'DELETE',
         headers: {
           'Authorization': `Bearer ${token}`, // Include the token in the Authorization header
