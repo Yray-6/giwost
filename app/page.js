@@ -696,7 +696,7 @@ export default function Home() {
             <hr className="w-20 border border-red-500"></hr>
           </div>
           <p className=" text-2xl font-bold leading-7">
-            Welcome to the best Assessment & certification company.
+            Welcome to the best Training & certification company.
           </p>
           <p className="text-sm">
             Global Institute of Workplace Skills Training was established to
