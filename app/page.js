@@ -146,7 +146,7 @@ export default function Home() {
             </div>
             <p className="mt-8 font-bold text-xl lg:text-2xl">
               Flexible <br />
-              Assessments
+              Training
             </p>
           </div>
           <div className="rounded-full relative">
