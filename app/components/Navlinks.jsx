@@ -13,22 +13,22 @@ const links = [
     name: "Home",
     href: "/",
   },
-  // {
-  //   name: "About Us",
-  //   href: "/About",
-  // },
-  // {
-  //   name: "Services",
-  //   href: "/services",
-  // },
-  // {
-  //   name: "FAQs",
-  //   href: "/faqs",
-  // },
-  // {
-  //   name: "Verification",
-  //   href: "http://giwost.com/certificate-verification-portal",
-  // },
+  {
+    name: "About Us",
+    href: "/About",
+  },
+  {
+    name: "Services",
+    href: "/services",
+  },
+  {
+    name: "FAQs",
+    href: "/faqs",
+  },
+  {
+    name: "Verification",
+    href: "http://giwost.com/certificate-verification-portal",
+  },
   
 ];
 
