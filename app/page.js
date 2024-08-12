@@ -31,9 +31,9 @@ export default function Home() {
 
   return (
     <div>
-      <div className="relative h-screen flex flex-col">
+      {/* <div className="relative h-screen flex flex-col"> */}
         <SimpleSlider />
-        <div className="absolute bg-white -bottom-24 lg:-bottom-12 self-center shadow-lg  flex flex-col gap-3 lg:flex-row lg:gap-32 py-3 lg:py-0 px-8 lg:px-7 text-blackish">
+        {/* <div className="absolute bg-white -bottom-24 lg:-bottom-12 self-center shadow-lg  flex flex-col gap-3 lg:flex-row lg:gap-32 py-3 lg:py-0 px-8 lg:px-7 text-blackish">
           <div className="flex lg:gap-2 gap-2 px-2">
             <div className=" border-r border-r-gray-400 lg:text-[3rem] text-[1.5rem] lg:my-4 lg:pr-5 pr-2">
               <FontAwesomeIcon icon={faBuildingColumns} />
@@ -429,7 +429,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       {/* <div className="relative flex flex-col items-center">
         <div className="bg-bluu text-center w-full pt-12 text-white">
           <p className="lg:text-3xl text-2xl font-semibold mb-2">
@@ -689,7 +689,7 @@ export default function Home() {
           </div>
         </div>
       </div> */}
-      <div className="video lg:mt-20  px-5 lg:px-[15%] grid lg:grid-cols-2 relative">
+      {/* <div className="video lg:mt-20  px-5 lg:px-[15%] grid lg:grid-cols-2 relative">
         <div className="flex flex-col gap-5 relative z-20 py-10 col-span-1">
           <div className="flex gap-7 items-center mb-5">
             <p className=" text-xs font-semibold">OUR SKILLS</p>
@@ -716,16 +716,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        {/* <div className="absolute z-40 -top-16 right-[15%]">
-          {" "}
-          <Image
-            src="/fork.png"
-            alt="service pic"
-            className="w-full hidden lg:block"
-            height={100}
-            width={700}
-          />
-        </div> */}
+       
         <div className="absolute inset-0 bg-white opacity-80"></div>
       </div>
  
@@ -842,7 +833,7 @@ export default function Home() {
   </div>
 </div>
 
-      </div>
+      </div> */}
       <Partners />
       <Footer />
       <FloatingWhatsApp />

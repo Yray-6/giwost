@@ -40,7 +40,7 @@ function NavbarSmall() {
           <Link href="/About" className={clsx("text-lg border-b border-b-gray-500 pb-2 font-light",{"font-bold":pathname === "/"})} onClick={toggleMenu}>
             About Us
           </Link>
-          <Link href="/services" className={clsx("text-lg border-b border-b-gray-500 pb-2 font-light",{"font-bold":pathname === "/About"})} onClick={toggleMenu}>
+          {/* <Link href="/services" className={clsx("text-lg border-b border-b-gray-500 pb-2 font-light",{"font-bold":pathname === "/About"})} onClick={toggleMenu}>
             Services
           </Link>
           <Link href="/faq" className={clsx("text-lg border-b border-b-gray-500 pb-2 font-light",{"font-bold":pathname === "/faq"})} onClick={toggleMenu}>
@@ -48,7 +48,7 @@ function NavbarSmall() {
           </Link>
           <Link href="https://giwost.com/certificate-verification-portal" className={clsx("text-lg border-b border-b-gray-500 pb-2 font-light",{"font-bold":pathname === "/buying"})} onClick={toggleMenu}>
             Verify Certificates
-          </Link>
+          </Link> */}
         </nav>
       </div>
     </div>
