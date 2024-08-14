@@ -1,17 +1,15 @@
 "use client";
 
 import Image from "next/image";
-import Swipe from "./components/Swiper";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import {
   faAward,
   faBuildingColumns,
   faEnvelope,
   faGlobe,
   faLocationDot,
-  faAngleDown,
-  faAngleUp,
+
 } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 import Partners from "./components/Partners";
@@ -20,26 +18,34 @@ import SimpleSlider from "./components/Swiper";
 import Testimony from "./components/Testimony";
 import SwipeN from "./components/SwipeN";
 import FloatingWhatsApp from "./components/Floating";
-import Services from "./components/offer";
+import AOS from "aos";
+import 'aos/dist/aos.css';
 
 export default function Home() {
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
-  const toggleDropdown = () => {
-    setDropdownOpen(!dropdownOpen);
-  };
+
+
+  useEffect(() => {
+    AOS.init({
+      duration: 500, // Customize your animation duration or other settings here
+    });
+  }, []);
 
   return (
     <div>
       <div className="relative h-screen flex flex-col">
+        <div data-aos="fade-right">
         <SimpleSlider />
-        <div className="absolute bg-white -bottom-24 lg:-bottom-12 self-center shadow-lg  flex flex-col gap-3 lg:flex-row lg:gap-32 py-3 lg:py-0 px-8 lg:px-7 text-blackish">
+        </div>
+     
+        <div  className="absolute bg-white -bottom-24 lg:-bottom-12 self-center shadow-lg  flex flex-col gap-3 lg:flex-row lg:gap-32 py-3 lg:py-0 px-8 lg:px-7 text-blackish">
           <div className="flex lg:gap-2 gap-2 px-2">
             <div className=" border-r border-r-gray-400 lg:text-[3rem] text-[1.5rem] lg:my-4 lg:pr-5 pr-2">
               <FontAwesomeIcon icon={faBuildingColumns} />
             </div>
 
-            <div className="flex-col justify-center items-start flex lg:gap-3">
+            <div  className="flex-col justify-center items-start flex lg:gap-3">
               <p>FLEXIBLE</p>
               <p className=" font-semibold ">COURSES</p>
             </div>
@@ -67,7 +73,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="lg:py-[5%] pt-36 mb-24 px-[5%] lg:px-[15%] flex flex-col lg:flex-row">
+      <div data-aos="flip-left"  data-aos-duration="1000" className="lg:py-[5%] pt-36 mb-24 px-[5%] lg:px-[15%] flex flex-col lg:flex-row">
         <Image
           src="/helmet.png"
           alt="image"
@@ -116,7 +122,7 @@ export default function Home() {
           <p className="relative z-10 text-sm">THE PROCESS FLOW</p>
           <hr className="w-12 border border-red-500"></hr>
         </div>
-        <div className=" flex lg:flex-row lg:hidden flex-col px-20 gap-8 lg:gap-16 justify-center items-center pt-12">
+        <div data-aos="fade-up"  data-aos-duration="1000" className=" flex lg:flex-row lg:hidden flex-col px-20 gap-8 lg:gap-16 justify-center items-center pt-12">
           <div className="rounded-full relative">
             <Image
               src="/round1.png"
@@ -254,10 +260,11 @@ export default function Home() {
         </div>
         <div>
           <h1 className="text-3xl font-bold text-black">Our Healthcare Courses</h1>
-          <div className="flex gap-5 flex-col lg:flex-row justify-center">
+          <div data-aos="flip-left"  data-aos-duration="1000" className="flex gap-5 flex-col lg:flex-row justify-center">
+          <Link href="/services">
           <div className="flex my-5 lg:mx-0 mx-7 relative justify-center">
               <Image
-                src="/1pic.webp"
+                src="/healthcare.webp"
                 alt="service pic"
                 className="w-full object-cover"
                 height={100}
@@ -270,9 +277,11 @@ export default function Home() {
                 Healthcare Assistant 
               </div>
             </div>
+          </Link>
+            <Link href="/services">
             <div className="flex my-5 lg:mx-0 mx-7 relative justify-center">
               <Image
-                src="/2pic.webp"
+                src="/social.webp"
                 alt="service pic"
                 className="w-full object-cover"
                 height={100}
@@ -285,10 +294,11 @@ export default function Home() {
                 Social Caregiver
               </div>
             </div>
-          
+         </Link>
+            <Link href="/services">
             <div className="flex relative my-5 lg:mx-0 mx-7 justify-center">
               <Image
-                src="/3pic.webp"
+                src="/hseq.webp"
                 alt="service pic"
                 className="w-full object-cover"
                 height={100}
@@ -298,12 +308,15 @@ export default function Home() {
               <div
                 className={`bg-white px-4 shadow absolute py-4 min-w-44 text-center font-semibold border-r-8 text-black rounded-lg -bottom-3 text-sm border-r-green-600`}
               >
-                Forklift Operator
+                HSE 1,2, 3
               </div>
             </div>
+         </Link>
+            <Link href="/services">
             <div className="flex relative my-5 lg:mx-0 mx-7 justify-center">
+            
               <Image
-                src="/3pic.webp"
+                src="/helath and social.webp"
                 alt="service pic"
                 className="w-full object-cover"
                 height={100}
@@ -313,9 +326,11 @@ export default function Home() {
               <div
                 className={`bg-white px-4 shadow absolute py-4 min-w-44 text-center font-semibold border-r-8 text-black rounded-lg -bottom-3 text-sm border-r-green-600`}
               >
-                Forklift Operator
+                Healthcare and social
               </div>
+           
             </div>
+     </Link>
           </div>
         </div>
         <div className="mx-[15%] hidden lg:block mt-12 border-b border-b-black">
@@ -425,8 +440,10 @@ export default function Home() {
                 <p className="font-bold text-xl pb-5 lg:text-2xl">
                   Verifiable Certificates
                 </p>
+                <p>Verify certificates on our website.</p>
               </div>
             </div>
+          
           </div>
         </div>
       </div>
@@ -792,8 +809,7 @@ export default function Home() {
           <p className="lg:text-lg text-xs font-semibold">
             SUITES 25/26 LONGJOHN PLAZA, 34 AGIP ROAD BESIDES MARKET SQUARE MILE 4 RUMUEME PORT HARCOURT
           </p>
-          <p className="lg:text-base text-xs font-semibold   text-red-600">Call: +234 708 959 7079</p>
-          <p className="lg:text-base text-xs font-semibold text-red-600">Payment Confirmation: +234 907 295 9598</p>
+          <p className="lg:text-base text-xs font-semibold   text-red-600">Phone: +234 708 959 7079</p>
         </div>
       </div>
 

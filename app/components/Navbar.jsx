@@ -34,8 +34,8 @@ export default function Navbar() {
     })}>
       <div className='border-b border-b-white px-28 flex text-[13px] py-2 justify-between bg-transparent'>
         <div className='flex gap-7'>
-          <p><FontAwesomeIcon icon={faEnvelope}/> info@giwost.com</p>
-          <p><FontAwesomeIcon icon={faLocationDot}/> Port-harcourt, Lagos, Warri, Nigeria</p>
+          <p> info@giwost.com</p>
+          <p> Port-harcourt, Lagos, Warri, Nigeria</p>
         </div>
       </div>
       <div className={`w-full flex pl-20 pr-28 py-2 z-50 justify-between items-center transition-colors duration-300 ${isScrolled ? 'fixed top-0 bg-white shadow text-black' : 'bg-transparent'}`}>

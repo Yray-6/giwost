@@ -13,7 +13,7 @@ body{
 }
 
 .bghero {
-  background-image: url("/herobg.webp");
+  background-image: url("/land1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -24,7 +24,7 @@ body{
 }
 
 .bgho{
-  background-image: url("/bgho.webp");
+  background-image: url("/land2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
