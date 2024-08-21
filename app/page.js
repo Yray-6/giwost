@@ -809,7 +809,8 @@ export default function Home() {
           <p className="lg:text-lg text-xs font-semibold">
             SUITES 25/26 LONGJOHN PLAZA, 34 AGIP ROAD BESIDES MARKET SQUARE MILE 4 RUMUEME PORT HARCOURT
           </p>
-          <p className="lg:text-base text-xs font-semibold   text-red-600">Phone: +234 708 959 7079</p>
+          <p className="lg:text-base text-xs font-semibold   text-red-600">Phone: +234 708 144 9799</p>
+          <p className="lg:text-base text-xs font-semibold   text-green-600">Whatsapp: +234 708 959 7079</p>
         </div>
       </div>
 
@@ -825,6 +826,7 @@ export default function Home() {
               48 ALLEN AVENUE, 4TH FLOOR OPPOSITE UNION BANK, IKEJA, LAGOS STATE
             </p>
             <p className="lg:text-lg text-xs font-semibold text-red-500">Phone: +234 916 906 6562</p>
+            <p className="lg:text-lg text-xs font-semibold text-green-500">Whatsapp: +234 815 330 5108</p>
           </div>
         </div>
 
@@ -839,6 +841,7 @@ export default function Home() {
               FUTEB PLAZA OPPOSITTE REFINERY JUNCTION, EFFURUN-SAPELE ROAD, WARRI DELTA STATE.
             </p>
             <p className="lg:text-lg text-xs font-semibold text-red-600">Phone: +234 903 388 0926</p>
+            <p className="lg:text-lg text-xs font-semibold text-green-600">Whatsapp: +234 903 388 0926</p>
           </div>
         </div>
 
