@@ -260,9 +260,9 @@ export default function Home() {
         </div>
         <div>
           <h1 className="text-3xl font-bold text-black">Our Healthcare Courses</h1>
-          <div data-aos="flip-left"  data-aos-duration="1000" className="flex gap-5 flex-col lg:flex-row justify-center">
+          <div  className="flex gap-5 flex-col lg:flex-row justify-center">
           <Link href="/services">
-          <div className="flex my-5 lg:mx-0 mx-7 relative justify-center">
+          <div data-aos="flip-left"  data-aos-duration="700" className="flex my-5 lg:mx-0 mx-7 relative justify-center">
               <Image
                 src="/healthcare.webp"
                 alt="service pic"
@@ -279,7 +279,7 @@ export default function Home() {
             </div>
           </Link>
             <Link href="/services">
-            <div className="flex my-5 lg:mx-0 mx-7 relative justify-center">
+            <div data-aos="flip-left"  data-aos-duration="700" className="flex my-5 lg:mx-0 mx-7 relative justify-center">
               <Image
                 src="/social.webp"
                 alt="service pic"
@@ -296,7 +296,7 @@ export default function Home() {
             </div>
          </Link>
             <Link href="/services">
-            <div className="flex relative my-5 lg:mx-0 mx-7 justify-center">
+            <div data-aos="flip-left"  data-aos-duration="700" className="flex relative my-5 lg:mx-0 mx-7 justify-center">
               <Image
                 src="/hseq.webp"
                 alt="service pic"
@@ -313,7 +313,7 @@ export default function Home() {
             </div>
          </Link>
             <Link href="/services">
-            <div className="flex relative my-5 lg:mx-0 mx-7 justify-center">
+            <div data-aos="flip-left"  data-aos-duration="700" className="flex relative my-5 lg:mx-0 mx-7 justify-center">
             
               <Image
                 src="/helath and social.webp"
@@ -706,7 +706,7 @@ export default function Home() {
           </div>
         </div>
       </div> */}
-      <div className="video lg:mt-20  px-5 lg:px-[15%] grid lg:grid-cols-2 relative">
+      <div data-aos="fade-down"  data-aos-duration="1000" className="video lg:mt-20  px-5 lg:px-[15%] grid lg:grid-cols-2 relative">
         <div className="flex flex-col gap-5 relative z-20 py-10 col-span-1">
           <div className="flex gap-7 items-center mb-5">
             <p className=" text-xs font-semibold">OUR SKILLS</p>
@@ -737,7 +737,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-white opacity-80"></div>
       </div>
  
-      <div className=" lg:grid font-serif text-white lg:grid-cols-10 mt-12">
+      <div data-aos="fade-down"  data-aos-duration="1500" className=" lg:grid font-serif text-white lg:grid-cols-10 mt-12">
         <div className="lg:col-span-6 bg-bluu lg:pl-[15%] lg:pr-20 lg:flex lg:flex-col gap-1 py-12 lg:py-20 ">
           <div className="flex gap-4 px-5 lg:gap-7 items-center mb-3 lg:mb-5">
             <p className="font-serif">Testimonials</p>
@@ -763,7 +763,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className=" text-center py-12">
+      <div data-aos="fade-down"  data-aos-duration="1000" className=" text-center py-12">
         <p className="lg:text-3xl text-2xl font-semibold">
           Our News and Insights
         </p>
@@ -776,7 +776,7 @@ export default function Home() {
           <SwipeN />
         </div>
       </div>
-      <div className=" text-center py-12 px-4 lg:px-24 bg-gray-100">
+      <div data-aos="fade-down"  data-aos-duration="1000" className=" text-center py-12 px-4 lg:px-24 bg-gray-100">
         <p className="lg:text-3xl text-2xl font-semibold">Get in touch</p>
         <div className="flex justify-center gap-2 pb-10 items-center">
           <hr className="w-12 border border-red-500"></hr>
