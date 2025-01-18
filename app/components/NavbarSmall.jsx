@@ -43,7 +43,7 @@ function NavbarSmall() {
           <Link href="/services" className={clsx("text-lg border-b border-b-gray-500 pb-2 font-light",{"font-bold":pathname === "/About"})} onClick={toggleMenu}>
             Services
           </Link>
-          <Link href="/faq" className={clsx("text-lg border-b border-b-gray-500 pb-2 font-light",{"font-bold":pathname === "/faq"})} onClick={toggleMenu}>
+          <Link href="/faqs" className={clsx("text-lg border-b border-b-gray-500 pb-2 font-light",{"font-bold":pathname === "/faq"})} onClick={toggleMenu}>
             FAQs
           </Link>
           <Link href="https://giwost.com/certificate-verification-portal" className={clsx("text-lg border-b border-b-gray-500 pb-2 font-light",{"font-bold":pathname === "/buying"})} onClick={toggleMenu}>
