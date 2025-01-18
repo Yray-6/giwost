@@ -796,7 +796,7 @@ const Page = () => {
             <div className="mt-4 p-4 bg-blue-50 rounded-lg">
               <p className="text-gray-700 italic">
                 Note: You can visit any of these hospitals in your location for
-                verification if you're in doubt before registration, but No
+                verification if you&apos;re in doubt before registration, but No
                 registration and payment is made in the hospital
               </p>
             </div>
